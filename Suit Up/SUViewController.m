@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad
 {
+    TFLog(@"Testing...1...2...3.");
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
