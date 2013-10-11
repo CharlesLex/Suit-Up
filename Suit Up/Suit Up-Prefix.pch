@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import <Parse/Parse.h>
     #import "TestFlight.h"
+    #import "CSVParser.h"
 #endif

@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		031CF5B917FB60B70011D5F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5B817FB60B70011D5F5 /* Parse.framework */; };
+		031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CF5BA17FB63580011D5F5 /* Main35.storyboard */; };
+		031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */; };
+		033A4E331807BC1600CBECEB /* Colors.csv in Resources */ = {isa = PBXBuildFile; fileRef = 033A4E321807BC1600CBECEB /* Colors.csv */; };
+		036EF3CB17FCEBCF009C8CF2 /* SUSuitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */; };
+		03ACD1E51807948300845CC0 /* Texture.csv in Resources */ = {isa = PBXBuildFile; fileRef = 03ACD1E31807948300845CC0 /* Texture.csv */; };
+		03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ACD1EA18079A6800845CC0 /* CSVParser.m */; };
+		03D3F90617FCC59100D8B63E /* SuitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F90517FCC59100D8B63E /* SuitView.xib */; };
+		03D3F90C17FCC5AF00D8B63E /* SUShirtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3F90B17FCC5AF00D8B63E /* SUShirtView.m */; };
+		03D3F90E17FCC5BD00D8B63E /* ShirtView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F90D17FCC5BD00D8B63E /* ShirtView.xib */; };
+		03D3F91017FCC5C800D8B63E /* ShoesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F90F17FCC5C800D8B63E /* ShoesView.xib */; };
+		03D3F91317FCC5D200D8B63E /* SUShoesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3F91217FCC5D200D8B63E /* SUShoesView.m */; };
+		03D3F91617FCC5DB00D8B63E /* SUTieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3F91517FCC5DB00D8B63E /* SUTieView.m */; };
+		03D3F91817FCC5E600D8B63E /* TieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F91717FCC5E600D8B63E /* TieView.xib */; };
 		03FCC27217FB491E00450057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27117FB491E00450057 /* Foundation.framework */; };
 		03FCC27417FB491E00450057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27317FB491E00450057 /* CoreGraphics.framework */; };
 		03FCC27617FB491E00450057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27517FB491E00450057 /* UIKit.framework */; };
@@ -22,7 +35,6 @@
 		03FCC29317FB491E00450057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27517FB491E00450057 /* UIKit.framework */; };
 		03FCC29B17FB491E00450057 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03FCC29917FB491E00450057 /* InfoPlist.strings */; };
 		03FCC29D17FB491E00450057 /* Suit_UpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FCC29C17FB491E00450057 /* Suit_UpTests.m */; };
-		03FCC2AA17FB49D200450057 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2A617FB49D200450057 /* libTestFlight.a */; };
 		03FCC2AC17FB49EE00450057 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2AB17FB49EE00450057 /* libz.dylib */; };
 		03FCC2B017FB4B7000450057 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2AF17FB4B7000450057 /* AudioToolbox.framework */; };
 		03FCC2B217FB4B7700450057 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2B117FB4B7700450057 /* CFNetwork.framework */; };
@@ -47,6 +59,27 @@
 
 /* Begin PBXFileReference section */
 		031CF5B817FB60B70011D5F5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		031CF5BA17FB63580011D5F5 /* Main35.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main35.storyboard; sourceTree = "<group>"; };
+		031CF5BC17FB7DCD0011D5F5 /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		031CF5BD17FB7DCD0011D5F5 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		031CF5BE17FB7DCD0011D5F5 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		033A4E321807BC1600CBECEB /* Colors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.csv; sourceTree = "<group>"; };
+		036EF3C917FCEBCF009C8CF2 /* SUSuitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSuitView.h; sourceTree = "<group>"; };
+		036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSuitView.m; sourceTree = "<group>"; };
+		03ACD1E31807948300845CC0 /* Texture.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Texture.csv; sourceTree = "<group>"; };
+		03ACD1E918079A6800845CC0 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
+		03ACD1EA18079A6800845CC0 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		03D3F90517FCC59100D8B63E /* SuitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuitView.xib; sourceTree = "<group>"; };
+		03D3F90A17FCC5AF00D8B63E /* SUShirtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUShirtView.h; sourceTree = "<group>"; };
+		03D3F90B17FCC5AF00D8B63E /* SUShirtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUShirtView.m; sourceTree = "<group>"; };
+		03D3F90D17FCC5BD00D8B63E /* ShirtView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShirtView.xib; sourceTree = "<group>"; };
+		03D3F90F17FCC5C800D8B63E /* ShoesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoesView.xib; sourceTree = "<group>"; };
+		03D3F91117FCC5D200D8B63E /* SUShoesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUShoesView.h; sourceTree = "<group>"; };
+		03D3F91217FCC5D200D8B63E /* SUShoesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUShoesView.m; sourceTree = "<group>"; };
+		03D3F91417FCC5DB00D8B63E /* SUTieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTieView.h; sourceTree = "<group>"; };
+		03D3F91517FCC5DB00D8B63E /* SUTieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTieView.m; sourceTree = "<group>"; };
+		03D3F91717FCC5E600D8B63E /* TieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TieView.xib; sourceTree = "<group>"; };
 		03FCC26E17FB491E00450057 /* Suit Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suit Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FCC27117FB491E00450057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03FCC27317FB491E00450057 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,10 +99,6 @@
 		03FCC29817FB491E00450057 /* Suit UpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Suit UpTests-Info.plist"; sourceTree = "<group>"; };
 		03FCC29A17FB491E00450057 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03FCC29C17FB491E00450057 /* Suit_UpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Suit_UpTests.m; sourceTree = "<group>"; };
-		03FCC2A617FB49D200450057 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		03FCC2A717FB49D200450057 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = ../TestFlight.h; sourceTree = "<group>"; };
-		03FCC2A817FB49D200450057 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+AsyncLogging.h"; path = "../TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		03FCC2A917FB49D200450057 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "../TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		03FCC2AB17FB49EE00450057 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		03FCC2AF17FB4B7000450057 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		03FCC2B117FB4B7700450057 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -88,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */,
 				03FCC2C017FB4BA900450057 /* SystemConfiguration.framework in Frameworks */,
 				03FCC2BE17FB4BA100450057 /* StoreKit.framework in Frameworks */,
 				03FCC2BC17FB4B9C00450057 /* Security.framework in Frameworks */,
@@ -102,7 +132,6 @@
 				03FCC2AC17FB49EE00450057 /* libz.dylib in Frameworks */,
 				03FCC27617FB491E00450057 /* UIKit.framework in Frameworks */,
 				03FCC27217FB491E00450057 /* Foundation.framework in Frameworks */,
-				03FCC2AA17FB49D200450057 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D3F90117FCC47600D8B63E /* Tie */ = {
+			isa = PBXGroup;
+			children = (
+				03D3F91417FCC5DB00D8B63E /* SUTieView.h */,
+				03D3F91517FCC5DB00D8B63E /* SUTieView.m */,
+				03D3F91717FCC5E600D8B63E /* TieView.xib */,
+			);
+			name = Tie;
+			sourceTree = "<group>";
+		};
+		03D3F90217FCC47E00D8B63E /* Shoes */ = {
+			isa = PBXGroup;
+			children = (
+				03D3F90F17FCC5C800D8B63E /* ShoesView.xib */,
+				03D3F91117FCC5D200D8B63E /* SUShoesView.h */,
+				03D3F91217FCC5D200D8B63E /* SUShoesView.m */,
+			);
+			name = Shoes;
+			sourceTree = "<group>";
+		};
+		03D3F90317FCC48A00D8B63E /* Shirt */ = {
+			isa = PBXGroup;
+			children = (
+				03D3F90A17FCC5AF00D8B63E /* SUShirtView.h */,
+				03D3F90B17FCC5AF00D8B63E /* SUShirtView.m */,
+				03D3F90D17FCC5BD00D8B63E /* ShirtView.xib */,
+			);
+			name = Shirt;
+			sourceTree = "<group>";
+		};
+		03D3F90417FCC48E00D8B63E /* Suit */ = {
+			isa = PBXGroup;
+			children = (
+				03D3F90517FCC59100D8B63E /* SuitView.xib */,
+				036EF3C917FCEBCF009C8CF2 /* SUSuitView.h */,
+				036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */,
+			);
+			name = Suit;
+			sourceTree = "<group>";
+		};
 		03FCC26517FB491E00450057 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +210,7 @@
 		03FCC27017FB491E00450057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */,
 				031CF5B817FB60B70011D5F5 /* Parse.framework */,
 				03FCC2BF17FB4BA900450057 /* SystemConfiguration.framework */,
 				03FCC2BD17FB4BA100450057 /* StoreKit.framework */,
@@ -152,7 +222,6 @@
 				03FCC2B117FB4B7700450057 /* CFNetwork.framework */,
 				03FCC2AF17FB4B7000450057 /* AudioToolbox.framework */,
 				03FCC2AB17FB49EE00450057 /* libz.dylib */,
-				03FCC2A617FB49D200450057 /* libTestFlight.a */,
 				03FCC27117FB491E00450057 /* Foundation.framework */,
 				03FCC27317FB491E00450057 /* CoreGraphics.framework */,
 				03FCC27517FB491E00450057 /* UIKit.framework */,
@@ -164,10 +233,15 @@
 		03FCC27717FB491E00450057 /* Suit Up */ = {
 			isa = PBXGroup;
 			children = (
+				03D3F90417FCC48E00D8B63E /* Suit */,
+				03D3F90317FCC48A00D8B63E /* Shirt */,
+				03D3F90217FCC47E00D8B63E /* Shoes */,
+				03D3F90117FCC47600D8B63E /* Tie */,
 				03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */,
 				03FCC28017FB491E00450057 /* SUAppDelegate.h */,
 				03FCC28117FB491E00450057 /* SUAppDelegate.m */,
 				03FCC28317FB491E00450057 /* Main.storyboard */,
+				031CF5BA17FB63580011D5F5 /* Main35.storyboard */,
 				03FCC28617FB491E00450057 /* SUViewController.h */,
 				03FCC28717FB491E00450057 /* SUViewController.m */,
 				03FCC28917FB491E00450057 /* Images.xcassets */,
@@ -179,9 +253,13 @@
 		03FCC27817FB491E00450057 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				03FCC2A717FB49D200450057 /* TestFlight.h */,
-				03FCC2A817FB49D200450057 /* TestFlight+AsyncLogging.h */,
-				03FCC2A917FB49D200450057 /* TestFlight+ManualSessions.h */,
+				031CF5BC17FB7DCD0011D5F5 /* TestFlight.h */,
+				03ACD1E918079A6800845CC0 /* CSVParser.h */,
+				03ACD1EA18079A6800845CC0 /* CSVParser.m */,
+				031CF5BD17FB7DCD0011D5F5 /* TestFlight+AsyncLogging.h */,
+				03ACD1E31807948300845CC0 /* Texture.csv */,
+				031CF5BE17FB7DCD0011D5F5 /* TestFlight+ManualSessions.h */,
+				033A4E321807BC1600CBECEB /* Colors.csv */,
 				03FCC27917FB491E00450057 /* Suit Up-Info.plist */,
 				03FCC27A17FB491E00450057 /* InfoPlist.strings */,
 				03FCC27D17FB491E00450057 /* main.m */,
@@ -294,7 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03FCC28A17FB491E00450057 /* Images.xcassets in Resources */,
+				03D3F91817FCC5E600D8B63E /* TieView.xib in Resources */,
+				031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */,
+				03D3F90617FCC59100D8B63E /* SuitView.xib in Resources */,
+				03D3F90E17FCC5BD00D8B63E /* ShirtView.xib in Resources */,
 				03FCC27C17FB491E00450057 /* InfoPlist.strings in Resources */,
+				03D3F91017FCC5C800D8B63E /* ShoesView.xib in Resources */,
+				03ACD1E51807948300845CC0 /* Texture.csv in Resources */,
+				033A4E331807BC1600CBECEB /* Colors.csv in Resources */,
 				03FCC28517FB491E00450057 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,9 +399,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D3F90C17FCC5AF00D8B63E /* SUShirtView.m in Sources */,
+				03D3F91617FCC5DB00D8B63E /* SUTieView.m in Sources */,
+				03D3F91317FCC5D200D8B63E /* SUShoesView.m in Sources */,
+				036EF3CB17FCEBCF009C8CF2 /* SUSuitView.m in Sources */,
 				03FCC28817FB491E00450057 /* SUViewController.m in Sources */,
 				03FCC28217FB491E00450057 /* SUAppDelegate.m in Sources */,
 				03FCC27E17FB491E00450057 /* main.m in Sources */,
+				03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +535,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Suit Up/Suit Up.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
@@ -457,6 +548,8 @@
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,6 +561,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Suit Up/Suit Up.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
@@ -480,6 +574,8 @@
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
