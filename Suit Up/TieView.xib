@@ -247,15 +247,15 @@
         </view>
     </objects>
     <resources>
-        <image name="gingham_circle" width="281" height="275"/>
-        <image name="gray_circle" width="140" height="140"/>
-        <image name="largestripe_circle" width="283" height="280"/>
-        <image name="lavendar_circle" width="140" height="140"/>
-        <image name="lightblue_circle" width="140" height="139"/>
-        <image name="royalblue_circle" width="140" height="140"/>
-        <image name="small_stripe_circle" width="281" height="280"/>
-        <image name="solid_circle" width="281" height="280"/>
-        <image name="underline_color" width="55" height="1"/>
-        <image name="white_circle" width="141" height="140"/>
+        <image name="gingham_circle" width="140" height="137"/>
+        <image name="gray_circle" width="70" height="70"/>
+        <image name="largestripe_circle" width="141" height="140"/>
+        <image name="lavendar_circle" width="70" height="70"/>
+        <image name="lightblue_circle" width="70" height="69"/>
+        <image name="royalblue_circle" width="70" height="70"/>
+        <image name="small_stripe_circle" width="140" height="140"/>
+        <image name="solid_circle" width="140" height="140"/>
+        <image name="underline_color" width="27" height="1"/>
+        <image name="white_circle" width="70" height="70"/>
     </resources>
 </document>

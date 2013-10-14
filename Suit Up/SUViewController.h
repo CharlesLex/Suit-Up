@@ -11,6 +11,7 @@
 #import "SUShirtView.h"
 #import "SUShoesView.h"
 #import "SUTieView.h"
+@class SUSuitView,SUShirtView,SUTieView;
 @interface SUViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *shoes;
 @property (strong, nonatomic) IBOutlet UIImageView *shirtNeck;
@@ -30,7 +31,13 @@
 @property (strong,nonatomic) SUShoesView *shoeView;
 @property (strong,nonatomic) SUTieView *tieView;
 @property (strong,nonatomic) SUSuitView *suitView;
-
+@property (strong, nonatomic) NSString *suitColor;
+@property (strong, nonatomic) NSString *shirtColor;
+@property (strong, nonatomic) NSString *tieColor;
+@property (strong, nonatomic) NSString *shoeColor;
+@property (strong, nonatomic) NSString *suitTexture;
+@property (strong, nonatomic) NSString *shirtTexture;
+@property (strong, nonatomic) NSString *tieTexture;
 - (IBAction)checkSuit:(id)sender;
 - (IBAction)openButton:(id)sender;
 - (IBAction)suitButton:(id)sender;

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SUViewController.h"
+@class SUViewController;
 @interface SUSuitView : UIView
 @property (nonatomic,retain) UIImageView *suit;
 @property (nonatomic,strong) NSString *color;
 @property (nonatomic,strong) NSString *texture;
+@property (nonatomic,strong) SUViewController *controller;
 
 - (IBAction)blackButtonPressed:(id)sender;
 - (IBAction)navyButtonPressed:(id)sender;
@@ -21,8 +23,6 @@
 - (IBAction)stripedButtonPressed:(id)sender;
 - (IBAction)texturedButtonPressed:(id)sender;
 - (IBAction)solidButtonPressed:(id)sender;
+- (void)setSuit:(UIImageView *)suit andView:(SUViewController *)controller;
 
-
-
--(void)setSuit:(UIImageView *)suit;
 @end

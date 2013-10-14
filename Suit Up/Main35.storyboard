@@ -34,7 +34,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="TzU-aU-hTy" kind="modal" modalTransitionStyle="flipHorizontal" id="dMg-zd-TA1"/>
+                                    <segue destination="TzU-aU-hTy" kind="modal" modalTransitionStyle="coverVertical" id="dMg-zd-TA1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -214,28 +214,28 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Brown Shoes" width="1596" height="4049"/>
-        <image name="SHIRTGG" width="1596" height="4049"/>
-        <image name="SHIRTNECKGG" width="1596" height="4049"/>
-        <image name="SUITBLST" width="1596" height="4049"/>
-        <image name="TIELLS" width="1596" height="4049"/>
-        <image name="background" width="2560" height="4544"/>
+        <image name="Brown Shoes" width="399" height="1012"/>
+        <image name="SHIRTGG" width="399" height="1012"/>
+        <image name="SHIRTNECKGG" width="399" height="1012"/>
+        <image name="SUITBLST" width="399" height="1012"/>
+        <image name="TIELLS" width="399" height="1012"/>
+        <image name="background" width="1280" height="2272"/>
         <image name="logo" width="699" height="200"/>
-        <image name="open_deselected" width="400" height="380"/>
-        <image name="open_selected" width="400" height="380"/>
+        <image name="open_deselected" width="200" height="190"/>
+        <image name="open_selected" width="200" height="190"/>
         <image name="quit" width="295" height="250"/>
         <image name="settings" width="305" height="250"/>
-        <image name="shirt_deselected" width="400" height="380"/>
-        <image name="shirt_selected" width="400" height="380"/>
-        <image name="shoes_deselected" width="400" height="380"/>
-        <image name="shoes_selected" width="400" height="380"/>
-        <image name="sidebar" width="400" height="4366"/>
+        <image name="shirt_deselected" width="200" height="190"/>
+        <image name="shirt_selected" width="200" height="190"/>
+        <image name="shoes_deselected" width="200" height="190"/>
+        <image name="shoes_selected" width="200" height="190"/>
+        <image name="sidebar" width="200" height="2183"/>
         <image name="splash_background" width="640" height="1136"/>
         <image name="splash_button" width="400" height="80"/>
-        <image name="suit_deselected" width="400" height="380"/>
-        <image name="suit_selected" width="400" height="380"/>
-        <image name="tie_deselected" width="400" height="381"/>
-        <image name="tie_selected" width="400" height="381"/>
+        <image name="suit_deselected" width="200" height="190"/>
+        <image name="suit_selected" width="200" height="190"/>
+        <image name="tie_deselected" width="200" height="190"/>
+        <image name="tie_selected" width="200" height="190"/>
         <image name="topbar" width="2560" height="447"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -19,58 +19,66 @@
     return self;
 }
 
--(void)setTie:(UIImageView *)tie{
+-(void)setTie:(UIImageView *)tie andView:(SUViewController *)controller{
     _tie = tie;
-    if(!_texture){
-        _texture = @"large stripe";
-    }
-    if(!_color){
-        _color = @"lavender";
-    }
+    _texture = controller.tieTexture;
+    _color = controller.tieColor;
+    self.controller = controller;
 }
+
 
 - (IBAction)whiteButton:(id)sender {
     _color = @"white";
+    self.controller.tieColor = @"white";
     [self updateImage];
 }
 
 - (IBAction)lightBlueButton:(id)sender {
     _color = @"lBlue";
+    self.controller.tieColor = @"lBlue";
     [self updateImage];
 }
 
 - (IBAction)royalBlueButton:(id)sender {
     _color = @"rBlue";
+    self.controller.tieColor = @"rBlue";
+
     [self updateImage];
 }
 
 - (IBAction)lavendarButton:(id)sender {
     _color = @"lavender";
+    self.controller.tieColor = @"lavender";
     [self updateImage];
 }
 
 - (IBAction)grayButton:(id)sender {
     _color = @"gray";
+    self.controller.tieColor = @"gray";
     [self updateImage];
 }
 
 - (IBAction)stripedButton:(id)sender {
     _texture = @"small stripe";
+    self.controller.tieTexture = @"small stripe";
     [self updateImage];
 }
 
 - (IBAction)texturedButton:(id)sender {
     _texture = @"large stripe";
+    self.controller.tieTexture = @"large stripe";
     [self updateImage];
 }
 
 - (IBAction)ginghamButton:(id)sender {
     _texture = @"gingham";
+    self.controller.tieTexture = @"gingham";
     [self updateImage];
 }
 
 - (IBAction)solidButton:(id)sender {
     _texture = @"solid";
+    self.controller.tieTexture = @"solid";
     [self updateImage];
 }
 -(void)updateImage{

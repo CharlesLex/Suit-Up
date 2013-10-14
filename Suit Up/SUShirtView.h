@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SUViewController.h"
+@class SUViewController;
 @interface SUShirtView : UIView
 @property (nonatomic,retain) UIImageView *shirt;
 @property (nonatomic,retain) UIImageView *shirt_Neck;
 @property (nonatomic,strong) NSString *color;
 @property (nonatomic,strong) NSString *texture;
--(void)setShirt:(UIImageView *)shirt;
+@property (nonatomic,strong) SUViewController *controller;
+-(void)setShirt:(UIImageView *)shirt andView:(SUViewController *)controller;
 -(void)setShirt_Neck:(UIImageView *)shirt_Neck;
 - (IBAction)whiteButton:(id)sender;
 - (IBAction)lightBlueButton:(id)sender;

@@ -24,6 +24,7 @@
      UIRemoteNotificationTypeBadge |
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
+    
     CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
     
     if (iOSDeviceScreenSize.height == 480)

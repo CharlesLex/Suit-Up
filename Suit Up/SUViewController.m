@@ -31,6 +31,15 @@
     else{
         _size = [NSNumber numberWithInt:57];
     }
+    
+    _shirtTexture = @"gingham";
+    _tieTexture = @"large stripe";
+    _suitTexture = @"striped";
+    
+    _suitColor = @"black";
+    _shirtColor = @"gray";
+    _tieColor = @"lavender";
+    _shoeColor = @"brown";
 }
 -(void)setUpTextureData{
     NSString *txtFilePath = [[NSBundle mainBundle] pathForResource:@"Texture" ofType:@"csv"];
@@ -64,41 +73,17 @@
 }
 
 - (IBAction)checkSuit:(id)sender {
-    NSString *suitColor;
-    NSString *shirtColor;
-    NSString *tieColor;
-    NSString *shoeColor;
-    
-    if(_suitView.color != NULL){
-        suitColor = _suitView.color;
+    if(_shoeColor == NULL){
+        _shoeColor = @"brown";
     }
     else{
-        suitColor = @"black";
-    }
-    
-    if(_shirtView.color != NULL){
-        shirtColor = _shirtView.color;
-    }
-    else{
-        shirtColor = @"gray";
-    }
-    if(_tieView.color != NULL){
-        tieColor = _tieView.color;
-    }
-    else{
-        tieColor = @"lavender";
-    }
-    if(_shoeView.color != NULL){
-        shoeColor = _shoeView.color;
-    }
-    else{
-        shoeColor = @"brown";
+        _shoeColor = _shoeView.color;
     }
 
-    NSPredicate *suitColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",suitColor]];
-    NSPredicate *shirtColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",shirtColor]];
-    NSPredicate *tieColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Tie LIKE '%@'",tieColor]];
-    NSPredicate *shoeColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shoes LIKE '%@'",shoeColor]];
+    NSPredicate *suitColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",_suitColor]];
+    NSPredicate *shirtColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",_shirtColor]];
+    NSPredicate *tieColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Tie LIKE '%@'",_tieColor]];
+    NSPredicate *shoeColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shoes LIKE '%@'",_shoeColor]];
     NSArray *filtered = [[[[_colorRating filteredArrayUsingPredicate:suitColorFilter]
                            filteredArrayUsingPredicate:shirtColorFilter]
                          filteredArrayUsingPredicate:tieColorFilter]
@@ -114,32 +99,10 @@
                                          otherButtonTitles:nil];
     [alert show];
     NSLog(@"Rating: %@",rating);
-    NSString *suitTexture;
-    NSString *shirtTexture;
-    NSString *tieTexture;
     
-    if(_suitView.texture != NULL){
-        suitTexture = _suitView.texture;
-    }
-    else{
-        suitTexture = @"striped";
-    }
-    
-    if(_shirtView.texture != NULL){
-        shirtTexture = _shirtView.texture;
-    }
-    else{
-        shirtTexture = @"large stripe";
-    }
-    if(_tieView.texture != NULL){
-        tieTexture = _tieView.texture;
-    }
-    else{
-        tieTexture = @"large stripe";
-    }
-    NSPredicate *suitTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",suitTexture]];
-    NSPredicate *shirtTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",shirtTexture]];
-    NSPredicate *tieTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Tie LIKE '%@'",tieTexture]];
+    NSPredicate *suitTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",_suitTexture]];
+    NSPredicate *shirtTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",_shirtTexture]];
+    NSPredicate *tieTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Tie LIKE '%@'",_tieTexture]];
     NSArray *texture = [[[_textureRating
                           filteredArrayUsingPredicate:suitTextureFilter]
                          filteredArrayUsingPredicate:shirtTextureFilter]
@@ -170,7 +133,7 @@
     _suitView = [[[NSBundle mainBundle] loadNibNamed:@"SuitView" owner:self options:nil] firstObject];
     _suitView.frame = CGRectMake(55, [_size intValue], 100, 580);
     [self.view addSubview:_suitView];
-    [_suitView setSuit:_suit];
+    [_suitView setSuit:_suit andView:self];
     for(UIButton *button in _buttonArray){
         [button setSelected:NO];
     }
@@ -182,7 +145,7 @@
     _shirtView.frame = CGRectMake(55, [_size intValue], 100, 580);
     [self.view addSubview:_shirtView];
     [_shirtView setShirt_Neck:_shirtNeck];
-    [_shirtView setShirt:_shirt];
+    [_shirtView setShirt:_shirt andView:self];
     for(UIButton *button in _buttonArray){
         [button setSelected:NO];
     }
@@ -193,7 +156,7 @@
     _tieView = [[[NSBundle mainBundle] loadNibNamed:@"TieView" owner:self options:nil] firstObject];
     _tieView.frame = CGRectMake(55, [_size intValue], 100, 580);
     [self.view addSubview:_tieView];
-    [_tieView setTie:_tie];
+    [_tieView setTie:_tie andView:self];
     for(UIButton *button in _buttonArray){
         [button setSelected:NO];
     }

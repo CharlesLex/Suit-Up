@@ -7,6 +7,7 @@
 //
 
 #import "SUSuitView.h"
+#import "SUViewController.h"
 
 @implementation SUSuitView
 
@@ -18,58 +19,69 @@
     }
     return self;
 }
--(void)setSuit:(UIImageView *)suit{
-    _suit = suit;
-    if(!_texture){
-        _texture = @"striped";
-    }
-    if(!_color){
-        _color = @"black";
-    }
+-(void)setSuit:(UIImageView *)suit andView:(SUViewController *)controller{
+    self.suit  = suit;
+    self.texture = controller.suitTexture;
+    self.color = controller.suitColor;
+    self.controller = controller;
 }
 - (IBAction)blackButtonPressed:(id)sender {
     _color = @"black";
+    self.controller.suitColor = @"black";
+    NSLog(@"%@",self.controller.suitColor);
     [self adjustImage];
 }
 
 - (IBAction)navyButtonPressed:(id)sender {
     _color = @"navy";
-    [self adjustImage];
+    self.controller.suitColor = @"navy";
+    NSLog(@"%@",self.controller.suitColor);
 
+    [self adjustImage];
 }
 
 - (IBAction)lGrayButtonPressed:(id)sender {
     _color = @"lGray";
+    self.controller.suitColor = @"lGray";
+    NSLog(@"%@",self.controller.suitColor);
+
     [self adjustImage];
 
 }
 
 - (IBAction)dGrayButtonPressed:(id)sender {
     _color = @"dGray";
+    self.controller.suitColor = @"dGray";
+
     [self adjustImage];
 
 }
 
 - (IBAction)brownButtonPressed:(id)sender {
     _color = @"brown";
+    self.controller.suitColor = @"brown";
+
     [self adjustImage];
 
 }
 
 - (IBAction)stripedButtonPressed:(id)sender {
     _texture = @"striped";
+    self.controller.suitTexture = @"striped";
     [self adjustImage];
 
 }
 
 - (IBAction)texturedButtonPressed:(id)sender {
     _texture = @"textured";
+    self.controller.suitTexture = @"textured";
     [self adjustImage];
 
 }
 
 - (IBAction)solidButtonPressed:(id)sender {
     _texture = @"solid";
+    self.controller.suitTexture = @"solid";
     [self adjustImage];
 
 }

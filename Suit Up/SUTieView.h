@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SUViewController.h"
 @interface SUTieView : UIView
 @property (nonatomic,retain) UIImageView *tie;
 @property (nonatomic,strong) NSString *color;
 @property (nonatomic,strong) NSString *texture;
+@property (nonatomic,strong) SUViewController *controller;
 
--(void)setTie:(UIImageView *)tie;
+-(void)setTie:(UIImageView *)tie andView:(SUViewController *)controller;
 - (IBAction)whiteButton:(id)sender;
 - (IBAction)lightBlueButton:(id)sender;
 - (IBAction)royalBlueButton:(id)sender;

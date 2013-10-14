@@ -73,7 +73,7 @@
         </view>
     </objects>
     <resources>
-        <image name="black_circle" width="140" height="140"/>
-        <image name="brown_circle" width="141" height="141"/>
+        <image name="black_circle" width="70" height="70"/>
+        <image name="brown_circle" width="70" height="70"/>
     </resources>
 </document>

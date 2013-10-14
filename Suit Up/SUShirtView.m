@@ -18,14 +18,12 @@
     }
     return self;
 }
--(void)setShirt:(UIImageView *)shirt{
+-(void)setShirt:(UIImageView *)shirt andView:(SUViewController *)controller{
     _shirt = shirt;
-    if(!_texture){
-        _texture = @"large stripe";
-    }
-    if(!_color){
-        _color = @"gray";
-    }
+    _texture = controller.shirtTexture;
+    _color = controller.shirtColor;
+    _controller = controller;
+    
 }
 -(void)setShirt_Neck:(UIImageView *)shirt_Neck{
     _shirt_Neck = shirt_Neck;
@@ -33,46 +31,61 @@
 
 - (IBAction)whiteButton:(id)sender {
     _color = @"white";
+    self.controller.shirtColor = @"white";
     [self updateImage];
 }
 
 - (IBAction)lightBlueButton:(id)sender {
     _color = @"lBlue";
+    self.controller.shirtColor = @"lBlue";
+
     [self updateImage];
 }
 
 - (IBAction)royalBlueButton:(id)sender {
     _color = @"rBlue";
+    self.controller.shirtColor = @"rBlue";
+
     [self updateImage];
 }
 
 - (IBAction)lavendarButton:(id)sender {
     _color = @"lavender";
+    self.controller.shirtColor = @"lavender";
+
     [self updateImage];
 }
 
 - (IBAction)grayButton:(id)sender {
     _color = @"gray";
+    self.controller.shirtColor = @"gray";
     [self updateImage];
 }
 
 - (IBAction)stripedButton:(id)sender {
     _texture = @"small stripe";
+    self.controller.shirtTexture = @"small stripe";
     [self updateImage];
 }
 
 - (IBAction)texturedButton:(id)sender {
     _texture = @"large stripe";
+    self.controller.shirtTexture = @"large stripe";
+
     [self updateImage];
 }
 
 - (IBAction)ginghamButton:(id)sender {
     _texture = @"gingham";
+    self.controller.shirtTexture = @"gingham";
+
     [self updateImage];
 }
 
 - (IBAction)solidButton:(id)sender {
     _texture = @"solid";
+    self.controller.shirtTexture = @"solid";
+
     [self updateImage];
 }
 
