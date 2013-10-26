@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="p29-15-kbb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="PMY-ay-m86">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -34,16 +34,34 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="coverVertical" id="btZ-pZ-fmz"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="btZ-pZ-fmz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="f8C-Ru-iaw"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gM-za-gYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-434" y="-2116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RI8-KP-dJy">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="PMY-ay-m86" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cXj-Kb-hXr">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="p29-15-kbb" kind="relationship" relationship="rootViewController" id="X6x-HP-Amt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rv-cO-etX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-989" y="-2080"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -177,7 +195,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fg7-Rx-Eh3">
                                 <rect key="frame" x="2" y="457" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Check" backgroundImage="splash_button">
+                                <state key="normal" title="Rate it" backgroundImage="splash_button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -189,6 +207,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="RJC-8Z-k1A"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="openButton" destination="UhO-fk-zJN" id="H3z-MB-Hx5"/>
                         <outlet property="shirt" destination="PQA-Qt-gFv" id="JMe-cj-RP9"/>
@@ -217,18 +238,24 @@
         <image name="logo" width="699" height="200"/>
         <image name="open_deselected" width="200" height="190"/>
         <image name="open_selected" width="200" height="190"/>
+        <image name="open_selected" width="200" height="190"/>
         <image name="quit" width="295" height="250"/>
         <image name="settings" width="305" height="250"/>
         <image name="shirt_deselected" width="200" height="190"/>
         <image name="shirt_selected" width="200" height="190"/>
+        <image name="shirt_selected" width="200" height="190"/>
         <image name="shoes_deselected" width="200" height="190"/>
+        <image name="shoes_selected" width="200" height="190"/>
         <image name="shoes_selected" width="200" height="190"/>
         <image name="sidebar" width="200" height="2183"/>
         <image name="splash_background" width="640" height="1136"/>
         <image name="splash_button" width="400" height="80"/>
+        <image name="splash_button" width="400" height="80"/>
         <image name="suit_deselected" width="200" height="190"/>
         <image name="suit_selected" width="200" height="190"/>
+        <image name="suit_selected" width="200" height="190"/>
         <image name="tie_deselected" width="200" height="190"/>
+        <image name="tie_selected" width="200" height="190"/>
         <image name="tie_selected" width="200" height="190"/>
         <image name="topbar" width="2560" height="447"/>
     </resources>

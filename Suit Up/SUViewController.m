@@ -7,9 +7,12 @@
 //
 
 #import "SUViewController.h"
-
-
+#import "JKPopup.h"
+#import "JKProgressHUD.h"
+#import "SURatingPopup.h"
 @interface SUViewController ()
+@property(nonatomic, strong) JKProgressHUD *popup;
+@property(nonatomic, strong) SURatingPopup *popup2;
 
 @end
 
@@ -73,13 +76,13 @@
 }
 
 - (IBAction)checkSuit:(id)sender {
-    if(_shoeColor == NULL){
+    if(!_shoeView){
         _shoeColor = @"brown";
     }
     else{
         _shoeColor = _shoeView.color;
     }
-
+    NSLog(@"%@",_shoeColor);
     NSPredicate *suitColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",_suitColor]];
     NSPredicate *shirtColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",_shirtColor]];
     NSPredicate *tieColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Tie LIKE '%@'",_tieColor]];
@@ -88,16 +91,11 @@
                            filteredArrayUsingPredicate:shirtColorFilter]
                          filteredArrayUsingPredicate:tieColorFilter]
                          filteredArrayUsingPredicate:shoeColorFilter];
-    
+
     NSString *rating = [[filtered firstObject]objectForKey:@"Rating"];
     NSString *comment = [[filtered firstObject]objectForKey:@"Comment"];
     if(!comment){comment = @"Lookin' Good!";}
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:[NSString stringWithFormat:@"This suit has Color rating: %@",rating]
-                                                   message:[NSString stringWithFormat:@"%@",comment]
-                                                  delegate:Nil
-                                         cancelButtonTitle:@"Cool!"
-                                         otherButtonTitles:nil];
-    [alert show];
+
     NSLog(@"Rating: %@",rating);
     
     NSPredicate *suitTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",_suitTexture]];
@@ -109,15 +107,24 @@
                         filteredArrayUsingPredicate:tieTextureFilter];
     NSString *rating2 = [[texture firstObject]objectForKey:@"Rating"];
     NSString *comment2 = [[texture firstObject]objectForKey:@"Comments"];
-    if(!comment2){comment2 = @"Nice Suit!";}
-    UIAlertView *alert2 = [[UIAlertView alloc]initWithTitle:[NSString stringWithFormat:@"This suit has Texture rating: %@",rating2]
-                                                   message:[NSString stringWithFormat:@"%@",comment2]
-                                                  delegate:Nil
-                                         cancelButtonTitle:@"Cool!"
-                                         otherButtonTitles:nil];
     
-    [alert2 show];
+    NSLog(@"LOOKING FOR: %@, %@, %@", suitTextureFilter, shirtTextureFilter , tieTextureFilter);
+    
+    if(!comment2){comment2 = @"Nice Suit!";}
 
+
+    NSNumber *total = [NSNumber numberWithFloat:((([rating integerValue] + [rating2 integerValue])/2)*10)];
+	self.popup = [[JKProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 200, 200) andTip:@"Always wear clothes"];
+	[self.popup show];
+	[self performSelector:@selector(hidePopup:) withObject:nil afterDelay:4.0];
+
+    self.popup2 = [[SURatingPopup alloc]initWithFrame:CGRectMake(0, 0, 200, 200) andTip1:comment andTip2:comment2 andRating:total];
+    
+    
+}
+- (void) hidePopup:(id)sender {
+	[self.popup hide];
+    [self.popup2 show];
 }
 
 - (IBAction)openButton:(id)sender {

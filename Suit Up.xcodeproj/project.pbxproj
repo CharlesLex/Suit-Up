@@ -11,6 +11,10 @@
 		031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CF5BA17FB63580011D5F5 /* Main35.storyboard */; };
 		031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */; };
 		033A4E331807BC1600CBECEB /* Colors.csv in Resources */ = {isa = PBXBuildFile; fileRef = 033A4E321807BC1600CBECEB /* Colors.csv */; };
+		036BFCAE181C2ACB0037C1A8 /* TJSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCAD181C2ACB0037C1A8 /* TJSpinner.m */; };
+		036BFCBB181C33310037C1A8 /* JKPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCB8181C33310037C1A8 /* JKPopup.m */; };
+		036BFCBC181C33310037C1A8 /* JKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCBA181C33310037C1A8 /* JKProgressHUD.m */; };
+		036BFCBF181C51AC0037C1A8 /* SURatingPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCBE181C51AC0037C1A8 /* SURatingPopup.m */; };
 		036EF3CB17FCEBCF009C8CF2 /* SUSuitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */; };
 		03ACD1E51807948300845CC0 /* Texture.csv in Resources */ = {isa = PBXBuildFile; fileRef = 03ACD1E31807948300845CC0 /* Texture.csv */; };
 		03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ACD1EA18079A6800845CC0 /* CSVParser.m */; };
@@ -21,6 +25,9 @@
 		03D3F91317FCC5D200D8B63E /* SUShoesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3F91217FCC5D200D8B63E /* SUShoesView.m */; };
 		03D3F91617FCC5DB00D8B63E /* SUTieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D3F91517FCC5DB00D8B63E /* SUTieView.m */; };
 		03D3F91817FCC5E600D8B63E /* TieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F91717FCC5E600D8B63E /* TieView.xib */; };
+		03DD0CC6181C5AA300F7DB79 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD0CC5181C5AA300F7DB79 /* Accelerate.framework */; };
+		03DD0D75181C633500F7DB79 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DD0D74181C633500F7DB79 /* FBMissingSymbols.m */; };
+		03DD0D77181C641100F7DB79 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD0D76181C641100F7DB79 /* libCorePlot-CocoaTouch.a */; };
 		03FCC27217FB491E00450057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27117FB491E00450057 /* Foundation.framework */; };
 		03FCC27417FB491E00450057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27317FB491E00450057 /* CoreGraphics.framework */; };
 		03FCC27617FB491E00450057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27517FB491E00450057 /* UIKit.framework */; };
@@ -65,6 +72,14 @@
 		031CF5BE17FB7DCD0011D5F5 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		033A4E321807BC1600CBECEB /* Colors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.csv; sourceTree = "<group>"; };
+		036BFCAC181C2ACB0037C1A8 /* TJSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSpinner.h; sourceTree = "<group>"; };
+		036BFCAD181C2ACB0037C1A8 /* TJSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSpinner.m; sourceTree = "<group>"; };
+		036BFCB7181C33310037C1A8 /* JKPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPopup.h; sourceTree = "<group>"; };
+		036BFCB8181C33310037C1A8 /* JKPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPopup.m; sourceTree = "<group>"; };
+		036BFCB9181C33310037C1A8 /* JKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKProgressHUD.h; sourceTree = "<group>"; };
+		036BFCBA181C33310037C1A8 /* JKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKProgressHUD.m; sourceTree = "<group>"; };
+		036BFCBD181C51AC0037C1A8 /* SURatingPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SURatingPopup.h; sourceTree = "<group>"; };
+		036BFCBE181C51AC0037C1A8 /* SURatingPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SURatingPopup.m; sourceTree = "<group>"; };
 		036EF3C917FCEBCF009C8CF2 /* SUSuitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSuitView.h; sourceTree = "<group>"; };
 		036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSuitView.m; sourceTree = "<group>"; };
 		03ACD1E31807948300845CC0 /* Texture.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Texture.csv; sourceTree = "<group>"; };
@@ -80,6 +95,9 @@
 		03D3F91417FCC5DB00D8B63E /* SUTieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUTieView.h; sourceTree = "<group>"; };
 		03D3F91517FCC5DB00D8B63E /* SUTieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUTieView.m; sourceTree = "<group>"; };
 		03D3F91717FCC5E600D8B63E /* TieView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TieView.xib; sourceTree = "<group>"; };
+		03DD0CC5181C5AA300F7DB79 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		03DD0D74181C633500F7DB79 /* FBMissingSymbols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBMissingSymbols.m; sourceTree = "<group>"; };
+		03DD0D76181C641100F7DB79 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
 		03FCC26E17FB491E00450057 /* Suit Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Suit Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FCC27117FB491E00450057 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03FCC27317FB491E00450057 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +135,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DD0D77181C641100F7DB79 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				03DD0CC6181C5AA300F7DB79 /* Accelerate.framework in Frameworks */,
 				031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */,
 				03FCC2C017FB4BA900450057 /* SystemConfiguration.framework in Frameworks */,
 				03FCC2BE17FB4BA100450057 /* StoreKit.framework in Frameworks */,
@@ -148,12 +168,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036BFCAF181C2AD20037C1A8 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				036BFCB7181C33310037C1A8 /* JKPopup.h */,
+				036BFCB8181C33310037C1A8 /* JKPopup.m */,
+				036BFCB9181C33310037C1A8 /* JKProgressHUD.h */,
+				036BFCBA181C33310037C1A8 /* JKProgressHUD.m */,
+				036BFCBD181C51AC0037C1A8 /* SURatingPopup.h */,
+				036BFCBE181C51AC0037C1A8 /* SURatingPopup.m */,
+			);
+			name = PopUp;
+			sourceTree = "<group>";
+		};
 		03D3F90117FCC47600D8B63E /* Tie */ = {
 			isa = PBXGroup;
 			children = (
-				03D3F91417FCC5DB00D8B63E /* SUTieView.h */,
-				03D3F91517FCC5DB00D8B63E /* SUTieView.m */,
-				03D3F91717FCC5E600D8B63E /* TieView.xib */,
 			);
 			name = Tie;
 			sourceTree = "<group>";
@@ -210,6 +240,8 @@
 		03FCC27017FB491E00450057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03DD0D76181C641100F7DB79 /* libCorePlot-CocoaTouch.a */,
+				03DD0CC5181C5AA300F7DB79 /* Accelerate.framework */,
 				031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */,
 				031CF5B817FB60B70011D5F5 /* Parse.framework */,
 				03FCC2BF17FB4BA900450057 /* SystemConfiguration.framework */,
@@ -233,10 +265,14 @@
 		03FCC27717FB491E00450057 /* Suit Up */ = {
 			isa = PBXGroup;
 			children = (
+				036BFCAF181C2AD20037C1A8 /* PopUp */,
 				03D3F90317FCC48A00D8B63E /* Shirt */,
 				03D3F90417FCC48E00D8B63E /* Suit */,
 				03D3F90217FCC47E00D8B63E /* Shoes */,
 				03D3F90117FCC47600D8B63E /* Tie */,
+				03D3F91417FCC5DB00D8B63E /* SUTieView.h */,
+				03D3F91517FCC5DB00D8B63E /* SUTieView.m */,
+				03D3F91717FCC5E600D8B63E /* TieView.xib */,
 				03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */,
 				03FCC28017FB491E00450057 /* SUAppDelegate.h */,
 				03FCC28117FB491E00450057 /* SUAppDelegate.m */,
@@ -253,6 +289,8 @@
 		03FCC27817FB491E00450057 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				036BFCAC181C2ACB0037C1A8 /* TJSpinner.h */,
+				036BFCAD181C2ACB0037C1A8 /* TJSpinner.m */,
 				031CF5BC17FB7DCD0011D5F5 /* TestFlight.h */,
 				03ACD1E918079A6800845CC0 /* CSVParser.h */,
 				03ACD1EA18079A6800845CC0 /* CSVParser.m */,
@@ -264,6 +302,7 @@
 				03FCC27A17FB491E00450057 /* InfoPlist.strings */,
 				03FCC27D17FB491E00450057 /* main.m */,
 				03FCC27F17FB491E00450057 /* Suit Up-Prefix.pch */,
+				03DD0D74181C633500F7DB79 /* FBMissingSymbols.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -400,12 +439,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D3F90C17FCC5AF00D8B63E /* SUShirtView.m in Sources */,
+				036BFCBB181C33310037C1A8 /* JKPopup.m in Sources */,
 				03D3F91617FCC5DB00D8B63E /* SUTieView.m in Sources */,
 				03D3F91317FCC5D200D8B63E /* SUShoesView.m in Sources */,
+				03DD0D75181C633500F7DB79 /* FBMissingSymbols.m in Sources */,
+				036BFCBC181C33310037C1A8 /* JKProgressHUD.m in Sources */,
 				036EF3CB17FCEBCF009C8CF2 /* SUSuitView.m in Sources */,
 				03FCC28817FB491E00450057 /* SUViewController.m in Sources */,
+				036BFCBF181C51AC0037C1A8 /* SURatingPopup.m in Sources */,
 				03FCC28217FB491E00450057 /* SUAppDelegate.m in Sources */,
 				03FCC27E17FB491E00450057 /* main.m in Sources */,
+				036BFCAE181C2ACB0037C1A8 /* TJSpinner.m in Sources */,
 				03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +535,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -523,6 +568,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -546,7 +592,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
+					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up/Suit\\ Up/CorePlotHeaders",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -572,7 +620,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
+					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up/Suit\\ Up/CorePlotHeaders",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
