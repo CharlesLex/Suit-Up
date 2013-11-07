@@ -24,19 +24,31 @@
     _texture = controller.tieTexture;
     _color = controller.tieColor;
     self.controller = controller;
+    _buttons = [[NSMutableArray alloc]initWithObjects:
+                _blackButton,_brownButton,_greyButton,_lBlueButton,_royalBlueButton,_lavendarButton,_orangeButton,_yellowButton,_greenButton,_whiteButton
+                , nil];
+    
 }
-
+-(void)selectButton:(id)sender{
+    for(UIButton *btn in _buttons){
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
+}
 
 - (IBAction)whiteButton:(id)sender {
     _color = @"white";
     self.controller.tieColor = @"white";
     [self updateImage];
+    [self selectButton:sender];
 }
 
 - (IBAction)lightBlueButton:(id)sender {
     _color = @"lBlue";
     self.controller.tieColor = @"lBlue";
     [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)royalBlueButton:(id)sender {
@@ -44,18 +56,64 @@
     self.controller.tieColor = @"rBlue";
 
     [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)lavendarButton:(id)sender {
     _color = @"lavender";
     self.controller.tieColor = @"lavender";
     [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)grayButton:(id)sender {
     _color = @"gray";
     self.controller.tieColor = @"gray";
     [self updateImage];
+    [self selectButton:sender];
+
+}
+
+- (IBAction)blackButton:(id)sender {
+    _color = @"black";
+    self.controller.tieColor = @"black";
+    [self updateImage];
+    [self selectButton:sender];
+
+}
+
+- (IBAction)brownButton:(id)sender {
+    _color = @"brown";
+    self.controller.tieColor = @"brown";
+    [self updateImage];
+    [self selectButton:sender];
+
+}
+
+- (IBAction)orangeButton:(id)sender {
+    _color = @"orange";
+    self.controller.tieColor = @"orange";
+    [self updateImage];
+    [self selectButton:sender];
+
+}
+
+- (IBAction)yellowButton:(id)sender {
+    _color = @"yellow";
+    self.controller.tieColor = @"yellow";
+    [self updateImage];
+    [self selectButton:sender];
+
+}
+
+- (IBAction)greenButton:(id)sender {
+    _color = @"green";
+    self.controller.tieColor = @"green";
+    [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)stripedButton:(id)sender {
@@ -102,6 +160,25 @@
             _tie.image = [UIImage imageNamed:@"TIEGSS"];
 
         }
+        else if([_color isEqualToString:@"black"]){
+            _tie.image = [UIImage imageNamed:@"TIEBLSS"];
+            
+        }
+        else if([_color isEqualToString:@"brown"]){
+            _tie.image = [UIImage imageNamed:@"TIEBRSS"];
+            
+        }
+        else if([_color isEqualToString:@"orange"]){
+            _tie.image = [UIImage imageNamed:@"TIEOSS"];
+            
+        }
+        else if([_color isEqualToString:@"yellow"]){
+            _tie.image = [UIImage imageNamed:@"TIEYSS"];
+            
+        }
+        else if([_color isEqualToString:@"green"]){
+            _tie.image = [UIImage imageNamed:@"TIEGRSS"];
+        }
     }
     else if([_texture isEqualToString:@"large stripe"]){
         if([_color isEqualToString:@"white"]){
@@ -122,6 +199,25 @@
         else if([_color isEqualToString:@"gray"]){
             _tie.image = [UIImage imageNamed:@"TIEGLS"];
             
+        }
+        else if([_color isEqualToString:@"black"]){
+            _tie.image = [UIImage imageNamed:@"TIEBLLS"];
+            
+        }
+        else if([_color isEqualToString:@"brown"]){
+            _tie.image = [UIImage imageNamed:@"TIEBRLS"];
+            
+        }
+        else if([_color isEqualToString:@"orange"]){
+            _tie.image = [UIImage imageNamed:@"TIEOLS"];
+            
+        }
+        else if([_color isEqualToString:@"yellow"]){
+            _tie.image = [UIImage imageNamed:@"TIEYLS"];
+            
+        }
+        else if([_color isEqualToString:@"green"]){
+            _tie.image = [UIImage imageNamed:@"TIEGRLS"];
         }
     }
     else if([_texture isEqualToString:@"gingham"]) {
@@ -144,6 +240,25 @@
             _tie.image = [UIImage imageNamed:@"TIEGG"];
             
         }
+        else if([_color isEqualToString:@"black"]){
+            _tie.image = [UIImage imageNamed:@"TIEBLG"];
+            
+        }
+        else if([_color isEqualToString:@"brown"]){
+            _tie.image = [UIImage imageNamed:@"TIEBRG"];
+            
+        }
+        else if([_color isEqualToString:@"orange"]){
+            _tie.image = [UIImage imageNamed:@"TIEOG"];
+            
+        }
+        else if([_color isEqualToString:@"yellow"]){
+            _tie.image = [UIImage imageNamed:@"TIEYG"];
+            
+        }
+        else if([_color isEqualToString:@"green"]){
+            _tie.image = [UIImage imageNamed:@"TIEGRG"];
+        }
         
     }
     else if([_texture isEqualToString:@"solid"]){
@@ -165,6 +280,25 @@
         else if([_color isEqualToString:@"gray"]){
             _tie.image = [UIImage imageNamed:@"TIEGS"];
             
+        }
+        else if([_color isEqualToString:@"black"]){
+            _tie.image = [UIImage imageNamed:@"TIEBLS"];
+            
+        }
+        else if([_color isEqualToString:@"brown"]){
+            _tie.image = [UIImage imageNamed:@"TIEBRS"];
+            
+        }
+        else if([_color isEqualToString:@"orange"]){
+            _tie.image = [UIImage imageNamed:@"TIEOS"];
+            
+        }
+        else if([_color isEqualToString:@"yellow"]){
+            _tie.image = [UIImage imageNamed:@"TIEYS"];
+            
+        }
+        else if([_color isEqualToString:@"green"]){
+            _tie.image = [UIImage imageNamed:@"TIEGRS"];
         }
     }
     else{

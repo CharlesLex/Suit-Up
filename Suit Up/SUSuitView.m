@@ -88,7 +88,7 @@
 -(void)adjustImage{
     if([_texture isEqualToString:@"striped"]){
         if([_color isEqualToString:@"black"]){
-            _suit.image = [UIImage imageNamed:@"SUITBLS"];
+            _suit.image = [UIImage imageNamed:@"SUITBLST"];
         }
         else if([_color isEqualToString:@"navy"]){
             _suit.image = [UIImage imageNamed:@"SUITNST"];

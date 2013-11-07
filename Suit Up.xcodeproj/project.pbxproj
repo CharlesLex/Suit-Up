@@ -11,6 +11,9 @@
 		031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CF5BA17FB63580011D5F5 /* Main35.storyboard */; };
 		031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */; };
 		033A4E331807BC1600CBECEB /* Colors.csv in Resources */ = {isa = PBXBuildFile; fileRef = 033A4E321807BC1600CBECEB /* Colors.csv */; };
+		034EEA07182C542700568FC9 /* SuitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 034EEA05182C542700568FC9 /* SuitModel.xcdatamodeld */; };
+		034EEA0D182C551B00568FC9 /* SUOpenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034EEA0C182C551B00568FC9 /* SUOpenView.m */; };
+		034EEA0F182C553000568FC9 /* OpenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034EEA0E182C553000568FC9 /* OpenView.xib */; };
 		036BFCAE181C2ACB0037C1A8 /* TJSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCAD181C2ACB0037C1A8 /* TJSpinner.m */; };
 		036BFCBB181C33310037C1A8 /* JKPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCB8181C33310037C1A8 /* JKPopup.m */; };
 		036BFCBC181C33310037C1A8 /* JKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCBA181C33310037C1A8 /* JKProgressHUD.m */; };
@@ -27,7 +30,6 @@
 		03D3F91817FCC5E600D8B63E /* TieView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F91717FCC5E600D8B63E /* TieView.xib */; };
 		03DD0CC6181C5AA300F7DB79 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD0CC5181C5AA300F7DB79 /* Accelerate.framework */; };
 		03DD0D75181C633500F7DB79 /* FBMissingSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DD0D74181C633500F7DB79 /* FBMissingSymbols.m */; };
-		03DD0D77181C641100F7DB79 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DD0D76181C641100F7DB79 /* libCorePlot-CocoaTouch.a */; };
 		03FCC27217FB491E00450057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27117FB491E00450057 /* Foundation.framework */; };
 		03FCC27417FB491E00450057 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27317FB491E00450057 /* CoreGraphics.framework */; };
 		03FCC27617FB491E00450057 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC27517FB491E00450057 /* UIKit.framework */; };
@@ -72,6 +74,10 @@
 		031CF5BE17FB7DCD0011D5F5 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		033A4E321807BC1600CBECEB /* Colors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.csv; sourceTree = "<group>"; };
+		034EEA06182C542700568FC9 /* SuitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuitModel.xcdatamodel; sourceTree = "<group>"; };
+		034EEA0B182C551B00568FC9 /* SUOpenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUOpenView.h; sourceTree = "<group>"; };
+		034EEA0C182C551B00568FC9 /* SUOpenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUOpenView.m; sourceTree = "<group>"; };
+		034EEA0E182C553000568FC9 /* OpenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenView.xib; sourceTree = "<group>"; };
 		036BFCAC181C2ACB0037C1A8 /* TJSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJSpinner.h; sourceTree = "<group>"; };
 		036BFCAD181C2ACB0037C1A8 /* TJSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJSpinner.m; sourceTree = "<group>"; };
 		036BFCB7181C33310037C1A8 /* JKPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPopup.h; sourceTree = "<group>"; };
@@ -135,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03DD0D77181C641100F7DB79 /* libCorePlot-CocoaTouch.a in Frameworks */,
 				03DD0CC6181C5AA300F7DB79 /* Accelerate.framework in Frameworks */,
 				031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */,
 				03FCC2C017FB4BA900450057 /* SystemConfiguration.framework in Frameworks */,
@@ -168,6 +173,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034EEA04182C53FB00568FC9 /* Open */ = {
+			isa = PBXGroup;
+			children = (
+				034EEA05182C542700568FC9 /* SuitModel.xcdatamodeld */,
+				034EEA0B182C551B00568FC9 /* SUOpenView.h */,
+				034EEA0C182C551B00568FC9 /* SUOpenView.m */,
+				034EEA0E182C553000568FC9 /* OpenView.xib */,
+			);
+			name = Open;
+			sourceTree = "<group>";
+		};
 		036BFCAF181C2AD20037C1A8 /* PopUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +200,9 @@
 		03D3F90117FCC47600D8B63E /* Tie */ = {
 			isa = PBXGroup;
 			children = (
+				03D3F91417FCC5DB00D8B63E /* SUTieView.h */,
+				03D3F91517FCC5DB00D8B63E /* SUTieView.m */,
+				03D3F91717FCC5E600D8B63E /* TieView.xib */,
 			);
 			name = Tie;
 			sourceTree = "<group>";
@@ -265,14 +284,12 @@
 		03FCC27717FB491E00450057 /* Suit Up */ = {
 			isa = PBXGroup;
 			children = (
+				034EEA04182C53FB00568FC9 /* Open */,
 				036BFCAF181C2AD20037C1A8 /* PopUp */,
 				03D3F90317FCC48A00D8B63E /* Shirt */,
 				03D3F90417FCC48E00D8B63E /* Suit */,
 				03D3F90217FCC47E00D8B63E /* Shoes */,
 				03D3F90117FCC47600D8B63E /* Tie */,
-				03D3F91417FCC5DB00D8B63E /* SUTieView.h */,
-				03D3F91517FCC5DB00D8B63E /* SUTieView.m */,
-				03D3F91717FCC5E600D8B63E /* TieView.xib */,
 				03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */,
 				03FCC28017FB491E00450057 /* SUAppDelegate.h */,
 				03FCC28117FB491E00450057 /* SUAppDelegate.m */,
@@ -415,6 +432,7 @@
 				031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */,
 				03D3F90617FCC59100D8B63E /* SuitView.xib in Resources */,
 				03D3F90E17FCC5BD00D8B63E /* ShirtView.xib in Resources */,
+				034EEA0F182C553000568FC9 /* OpenView.xib in Resources */,
 				03FCC27C17FB491E00450057 /* InfoPlist.strings in Resources */,
 				03D3F91017FCC5C800D8B63E /* ShoesView.xib in Resources */,
 				03ACD1E51807948300845CC0 /* Texture.csv in Resources */,
@@ -440,7 +458,9 @@
 			files = (
 				03D3F90C17FCC5AF00D8B63E /* SUShirtView.m in Sources */,
 				036BFCBB181C33310037C1A8 /* JKPopup.m in Sources */,
+				034EEA07182C542700568FC9 /* SuitModel.xcdatamodeld in Sources */,
 				03D3F91617FCC5DB00D8B63E /* SUTieView.m in Sources */,
+				034EEA0D182C551B00568FC9 /* SUOpenView.m in Sources */,
 				03D3F91317FCC5D200D8B63E /* SUShoesView.m in Sources */,
 				03DD0D75181C633500F7DB79 /* FBMissingSymbols.m in Sources */,
 				036BFCBC181C33310037C1A8 /* JKProgressHUD.m in Sources */,
@@ -594,7 +614,7 @@
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up/Suit\\ Up/CorePlotHeaders",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -622,7 +642,7 @@
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up",
 					"/Users/Josh/Desktop/Suit\\ Up/iOS/Suit\\ Up/Suit\\ Up/CorePlotHeaders",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -703,6 +723,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		034EEA05182C542700568FC9 /* SuitModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				034EEA06182C542700568FC9 /* SuitModel.xcdatamodel */,
+			);
+			currentVersion = 034EEA06182C542700568FC9 /* SuitModel.xcdatamodel */;
+			path = SuitModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 03FCC26617FB491E00450057 /* Project object */;
 }

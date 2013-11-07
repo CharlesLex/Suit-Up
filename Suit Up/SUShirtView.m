@@ -171,7 +171,6 @@
         else if([_color isEqualToString:@"lBlue"]){
             _shirt.image = [UIImage imageNamed:@"SHIRTLBS"];
             _shirt_Neck.image = [UIImage imageNamed:@"SHIRTNECKLBS"];
-            
         }
         else if([_color isEqualToString:@"rBlue"]){
             _shirt.image = [UIImage imageNamed:@"SHIRTRBS"];

@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pfw-Zd-Z0L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2wp-6g-Lj8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="bfB-R3-T4i">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="2wp-6g-Lj8" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3QL-e1-waQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pfw-Zd-Z0L" kind="relationship" relationship="rootViewController" id="M9Z-rv-5P7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NR-4F-Z9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2144" y="-4448"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Lq3-RS-Yo7">
             <objects>
@@ -34,12 +50,14 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="TzU-aU-hTy" kind="modal" modalTransitionStyle="coverVertical" id="dMg-zd-TA1"/>
+                                    <segue destination="TzU-aU-hTy" kind="push" id="dMg-zd-TA1"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HkC-eF-42u"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qf-6v-13d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +213,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="openButton" destination="WUI-Qa-jwg" id="HJc-Y9-wa7"/>
                         <outlet property="shirt" destination="jAb-Kv-wlc" id="buZ-gg-dtz"/>
@@ -210,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tr9-Es-ob0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="-4436"/>
+            <point key="canvasLocation" x="-897" y="-4430"/>
         </scene>
     </scenes>
     <resources>
@@ -221,21 +240,21 @@
         <image name="TIELLS" width="399" height="1012"/>
         <image name="background" width="1280" height="2272"/>
         <image name="logo" width="699" height="200"/>
-        <image name="open_deselected" width="200" height="190"/>
-        <image name="open_selected" width="200" height="190"/>
+        <image name="open_deselected" width="100" height="94"/>
+        <image name="open_selected" width="100" height="94"/>
         <image name="quit" width="295" height="250"/>
         <image name="settings" width="305" height="250"/>
-        <image name="shirt_deselected" width="200" height="190"/>
-        <image name="shirt_selected" width="200" height="190"/>
-        <image name="shoes_deselected" width="200" height="190"/>
-        <image name="shoes_selected" width="200" height="190"/>
-        <image name="sidebar" width="200" height="2183"/>
+        <image name="shirt_deselected" width="100" height="95"/>
+        <image name="shirt_selected" width="100" height="95"/>
+        <image name="shoes_deselected" width="100" height="95"/>
+        <image name="shoes_selected" width="100" height="95"/>
+        <image name="sidebar" width="100" height="1111"/>
         <image name="splash_background" width="640" height="1136"/>
         <image name="splash_button" width="400" height="80"/>
-        <image name="suit_deselected" width="200" height="190"/>
-        <image name="suit_selected" width="200" height="190"/>
-        <image name="tie_deselected" width="200" height="190"/>
-        <image name="tie_selected" width="200" height="190"/>
+        <image name="suit_deselected" width="100" height="95"/>
+        <image name="suit_selected" width="100" height="95"/>
+        <image name="tie_deselected" width="100" height="94"/>
+        <image name="tie_selected" width="100" height="94"/>
         <image name="topbar" width="2560" height="447"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -23,7 +23,7 @@
         _activityView.hidesWhenStopped = YES;
         _activityView.radius = 30;
         _activityView.pathColor = [UIColor whiteColor];
-        _activityView.fillColor = [UIColor redColor];
+        _activityView.fillColor = [UIColor grayColor];
         _activityView.thickness = 10;
 		[self addSubview:_activityView];
         _tip = [[UILabel alloc]init];
