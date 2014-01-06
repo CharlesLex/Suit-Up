@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SUShoesView : UIView
+@interface SUShoesView : CSAnimationView
 @property (nonatomic,retain) UIImageView *shoes;
 @property (strong,nonatomic) NSString *color;
 - (IBAction)setBlackShoes:(id)sender;
 - (IBAction)setBrownShoes:(id)sender;
 -(void)setShoes:(UIImageView *)shoes;
+-(void)updateShoes:(NSString*)shoeColor;
+
 @end

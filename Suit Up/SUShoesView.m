@@ -18,6 +18,16 @@
     }
     return self;
 }
+-(void)updateShoes:(NSString*)shoeColor{
+    _color = shoeColor;
+    if ([_color isEqualToString:@"black"]) {
+        [self setBlackShoes:self];
+    }
+    else{
+        [self setBrownShoes:self];
+    }
+
+}
 - (IBAction)setBlackShoes:(id)sender {
     _shoes.image = [UIImage imageNamed:@"Black Shoes"];
     _color = @"black";

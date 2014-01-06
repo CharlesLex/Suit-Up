@@ -24,18 +24,31 @@
     self.texture = controller.suitTexture;
     self.color = controller.suitColor;
     self.controller = controller;
+    _buttons = [[NSMutableArray alloc]initWithObjects:
+                _black,_brown,_lGray,_dGray,_navy,nil];
+}
+-(void)updateSuit:(NSString*)suitColor andTexture:(NSString*)suitTexture{
+    _color = suitColor;
+    _texture = suitTexture;
+    [self adjustImage];
+}
+-(void)selectButton:(id)sender{
+    for(UIButton *btn in _buttons){
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
 }
 - (IBAction)blackButtonPressed:(id)sender {
     _color = @"black";
     self.controller.suitColor = @"black";
-    NSLog(@"%@",self.controller.suitColor);
     [self adjustImage];
+    [self selectButton:sender];
 }
 
 - (IBAction)navyButtonPressed:(id)sender {
     _color = @"navy";
     self.controller.suitColor = @"navy";
-    NSLog(@"%@",self.controller.suitColor);
+    [self selectButton:sender];
 
     [self adjustImage];
 }
@@ -43,7 +56,7 @@
 - (IBAction)lGrayButtonPressed:(id)sender {
     _color = @"lGray";
     self.controller.suitColor = @"lGray";
-    NSLog(@"%@",self.controller.suitColor);
+    [self selectButton:sender];
 
     [self adjustImage];
 
@@ -52,7 +65,7 @@
 - (IBAction)dGrayButtonPressed:(id)sender {
     _color = @"dGray";
     self.controller.suitColor = @"dGray";
-
+    [self selectButton:sender];
     [self adjustImage];
 
 }
@@ -60,7 +73,7 @@
 - (IBAction)brownButtonPressed:(id)sender {
     _color = @"brown";
     self.controller.suitColor = @"brown";
-
+    [self selectButton:sender];
     [self adjustImage];
 
 }

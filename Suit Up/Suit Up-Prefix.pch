@@ -16,4 +16,5 @@
     #import <Parse/Parse.h>
     #import "TestFlight.h"
     #import "CSVParser.h"
+    #import <Canvas/CSAnimationView.h>
 #endif

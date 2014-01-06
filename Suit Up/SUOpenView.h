@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface SUOpenView : UIView
-
+#import "SUViewController.h"
+@interface SUOpenView : CSAnimationView <UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,retain) NSMutableArray *suits;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong,nonatomic) SUViewController *controller;
+-(void)setup:(SUViewController*)view;
 @end

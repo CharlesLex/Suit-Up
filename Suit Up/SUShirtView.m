@@ -23,21 +23,35 @@
     _texture = controller.shirtTexture;
     _color = controller.shirtColor;
     _controller = controller;
-    
+    _buttons = [[NSMutableArray alloc]initWithObjects:
+                _white,_lGray,_lBlue,_rBlue,_lavendar,nil];
+}
+-(void)selectButton:(id)sender{
+    for(UIButton *btn in _buttons){
+        [btn setSelected:NO];
+    }
+    [sender setSelected:YES];
 }
 -(void)setShirt_Neck:(UIImageView *)shirt_Neck{
     _shirt_Neck = shirt_Neck;
 }
-
+-(void)updateShirt:(NSString*)shirtColor andTexture:(NSString*)shirtTexture{
+    _color = shirtColor;
+    _texture = shirtTexture;
+    [self updateImage];
+}
 - (IBAction)whiteButton:(id)sender {
     _color = @"white";
     self.controller.shirtColor = @"white";
     [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)lightBlueButton:(id)sender {
     _color = @"lBlue";
     self.controller.shirtColor = @"lBlue";
+    [self selectButton:sender];
 
     [self updateImage];
 }
@@ -45,6 +59,7 @@
 - (IBAction)royalBlueButton:(id)sender {
     _color = @"rBlue";
     self.controller.shirtColor = @"rBlue";
+    [self selectButton:sender];
 
     [self updateImage];
 }
@@ -52,6 +67,7 @@
 - (IBAction)lavendarButton:(id)sender {
     _color = @"lavender";
     self.controller.shirtColor = @"lavender";
+    [self selectButton:sender];
 
     [self updateImage];
 }
@@ -60,6 +76,8 @@
     _color = @"gray";
     self.controller.shirtColor = @"gray";
     [self updateImage];
+    [self selectButton:sender];
+
 }
 
 - (IBAction)stripedButton:(id)sender {

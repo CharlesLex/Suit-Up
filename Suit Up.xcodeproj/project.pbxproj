@@ -10,6 +10,7 @@
 		031CF5B917FB60B70011D5F5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5B817FB60B70011D5F5 /* Parse.framework */; };
 		031CF5BB17FB63580011D5F5 /* Main35.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031CF5BA17FB63580011D5F5 /* Main35.storyboard */; };
 		031CF5C017FB7DD70011D5F5 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */; };
+		03249F911856A04500D6280C /* SUCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03249F901856A04500D6280C /* SUCommentViewController.m */; };
 		033A4E331807BC1600CBECEB /* Colors.csv in Resources */ = {isa = PBXBuildFile; fileRef = 033A4E321807BC1600CBECEB /* Colors.csv */; };
 		034EEA07182C542700568FC9 /* SuitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 034EEA05182C542700568FC9 /* SuitModel.xcdatamodeld */; };
 		034EEA0D182C551B00568FC9 /* SUOpenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 034EEA0C182C551B00568FC9 /* SUOpenView.m */; };
@@ -19,6 +20,7 @@
 		036BFCBC181C33310037C1A8 /* JKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCBA181C33310037C1A8 /* JKProgressHUD.m */; };
 		036BFCBF181C51AC0037C1A8 /* SURatingPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 036BFCBE181C51AC0037C1A8 /* SURatingPopup.m */; };
 		036EF3CB17FCEBCF009C8CF2 /* SUSuitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */; };
+		03921FC8187A0ABC004F7BEA /* Suit.m in Sources */ = {isa = PBXBuildFile; fileRef = 03921FC7187A0ABC004F7BEA /* Suit.m */; };
 		03ACD1E51807948300845CC0 /* Texture.csv in Resources */ = {isa = PBXBuildFile; fileRef = 03ACD1E31807948300845CC0 /* Texture.csv */; };
 		03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03ACD1EA18079A6800845CC0 /* CSVParser.m */; };
 		03D3F90617FCC59100D8B63E /* SuitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03D3F90517FCC59100D8B63E /* SuitView.xib */; };
@@ -54,6 +56,7 @@
 		03FCC2BC17FB4B9C00450057 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2BB17FB4B9C00450057 /* Security.framework */; };
 		03FCC2BE17FB4BA100450057 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2BD17FB4BA100450057 /* StoreKit.framework */; };
 		03FCC2C017FB4BA900450057 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FCC2BF17FB4BA900450057 /* SystemConfiguration.framework */; };
+		A86B1F6998C14730AE73B994 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BF662795C64D29B698BD72 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,8 @@
 		031CF5BD17FB7DCD0011D5F5 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		031CF5BE17FB7DCD0011D5F5 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		031CF5BF17FB7DD70011D5F5 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		03249F8F1856A04500D6280C /* SUCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUCommentViewController.h; sourceTree = "<group>"; };
+		03249F901856A04500D6280C /* SUCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUCommentViewController.m; sourceTree = "<group>"; };
 		033A4E321807BC1600CBECEB /* Colors.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.csv; sourceTree = "<group>"; };
 		034EEA06182C542700568FC9 /* SuitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuitModel.xcdatamodel; sourceTree = "<group>"; };
 		034EEA0B182C551B00568FC9 /* SUOpenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUOpenView.h; sourceTree = "<group>"; };
@@ -88,6 +93,8 @@
 		036BFCBE181C51AC0037C1A8 /* SURatingPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SURatingPopup.m; sourceTree = "<group>"; };
 		036EF3C917FCEBCF009C8CF2 /* SUSuitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUSuitView.h; sourceTree = "<group>"; };
 		036EF3CA17FCEBCF009C8CF2 /* SUSuitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUSuitView.m; sourceTree = "<group>"; };
+		03921FC6187A0ABC004F7BEA /* Suit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suit.h; sourceTree = "<group>"; };
+		03921FC7187A0ABC004F7BEA /* Suit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suit.m; sourceTree = "<group>"; };
 		03ACD1E31807948300845CC0 /* Texture.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Texture.csv; sourceTree = "<group>"; };
 		03ACD1E918079A6800845CC0 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
 		03ACD1EA18079A6800845CC0 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
@@ -133,7 +140,9 @@
 		03FCC2BB17FB4B9C00450057 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		03FCC2BD17FB4BA100450057 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		03FCC2BF17FB4BA900450057 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Suit Up.entitlements"; sourceTree = "<group>"; };
+		03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Suit Up.entitlements"; path = "Suit Up/Suit Up.entitlements"; sourceTree = "<group>"; };
+		331E0A4845714439AC0DCA4F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		85BF662795C64D29B698BD72 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +166,7 @@
 				03FCC2AC17FB49EE00450057 /* libz.dylib in Frameworks */,
 				03FCC27617FB491E00450057 /* UIKit.framework in Frameworks */,
 				03FCC27217FB491E00450057 /* Foundation.framework in Frameworks */,
+				A86B1F6998C14730AE73B994 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				034EEA05182C542700568FC9 /* SuitModel.xcdatamodeld */,
+				03921FC6187A0ABC004F7BEA /* Suit.h */,
+				03921FC7187A0ABC004F7BEA /* Suit.m */,
 				034EEA0B182C551B00568FC9 /* SUOpenView.h */,
 				034EEA0C182C551B00568FC9 /* SUOpenView.m */,
 				034EEA0E182C553000568FC9 /* OpenView.xib */,
@@ -240,10 +252,12 @@
 		03FCC26517FB491E00450057 = {
 			isa = PBXGroup;
 			children = (
+				03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */,
 				03FCC27717FB491E00450057 /* Suit Up */,
 				03FCC29617FB491E00450057 /* Suit UpTests */,
 				03FCC27017FB491E00450057 /* Frameworks */,
 				03FCC26F17FB491E00450057 /* Products */,
+				331E0A4845714439AC0DCA4F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +291,7 @@
 				03FCC27317FB491E00450057 /* CoreGraphics.framework */,
 				03FCC27517FB491E00450057 /* UIKit.framework */,
 				03FCC29017FB491E00450057 /* XCTest.framework */,
+				85BF662795C64D29B698BD72 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,13 +305,14 @@
 				03D3F90417FCC48E00D8B63E /* Suit */,
 				03D3F90217FCC47E00D8B63E /* Shoes */,
 				03D3F90117FCC47600D8B63E /* Tie */,
-				03FCC2C117FB4E1D00450057 /* Suit Up.entitlements */,
 				03FCC28017FB491E00450057 /* SUAppDelegate.h */,
 				03FCC28117FB491E00450057 /* SUAppDelegate.m */,
 				03FCC28317FB491E00450057 /* Main.storyboard */,
 				031CF5BA17FB63580011D5F5 /* Main35.storyboard */,
 				03FCC28617FB491E00450057 /* SUViewController.h */,
 				03FCC28717FB491E00450057 /* SUViewController.m */,
+				03249F8F1856A04500D6280C /* SUCommentViewController.h */,
+				03249F901856A04500D6280C /* SUCommentViewController.m */,
 				03FCC28917FB491E00450057 /* Images.xcassets */,
 				03FCC27817FB491E00450057 /* Supporting Files */,
 			);
@@ -349,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03FCC2A017FB491E00450057 /* Build configuration list for PBXNativeTarget "Suit Up" */;
 			buildPhases = (
+				5EF1139AC92D40ED817E44D7 /* Check Pods Manifest.lock */,
 				03FCC26A17FB491E00450057 /* Sources */,
 				03FCC26B17FB491E00450057 /* Frameworks */,
 				03FCC26C17FB491E00450057 /* Resources */,
+				C1646F0AED914D49AF99798E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,6 +469,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EF1139AC92D40ED817E44D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1646F0AED914D49AF99798E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		03FCC26A17FB491E00450057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -470,6 +521,8 @@
 				03FCC28217FB491E00450057 /* SUAppDelegate.m in Sources */,
 				03FCC27E17FB491E00450057 /* main.m in Sources */,
 				036BFCAE181C2ACB0037C1A8 /* TJSpinner.m in Sources */,
+				03921FC8187A0ABC004F7BEA /* Suit.m in Sources */,
+				03249F911856A04500D6280C /* SUCommentViewController.m in Sources */,
 				03ACD1EB18079A6800845CC0 /* CSVParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +649,7 @@
 		};
 		03FCC2A117FB491E00450057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331E0A4845714439AC0DCA4F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -624,6 +678,7 @@
 		};
 		03FCC2A217FB491E00450057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 331E0A4845714439AC0DCA4F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Suit" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Suit" representedClassName="Suit" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shirt_color" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shirt_texture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shoes_color" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="shoes_texture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="suit_color" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="suit_texture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tie_color" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tie_texture" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Suit" positionX="-3125" positionY="-153" width="128" height="43"/>
+        <element name="Suit" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

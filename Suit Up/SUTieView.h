@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SUViewController.h"
-@interface SUTieView : UIView
+@interface SUTieView : CSAnimationView
 @property (nonatomic,retain) UIImageView *tie;
 @property (nonatomic,strong) NSString *color;
 @property (nonatomic,strong) NSString *texture;
@@ -51,5 +51,6 @@
 - (IBAction)texturedButton:(id)sender;
 - (IBAction)ginghamButton:(id)sender;
 - (IBAction)solidButton:(id)sender;
+-(void)updateTie:(NSString*)tieColor andTexture:(NSString*)tieTexture;
 
 @end

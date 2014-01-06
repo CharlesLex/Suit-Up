@@ -1,15 +1,15 @@
 Suit,Shirt,Tie,Shoes,Rating,Comment
 black,white,black,black,8,Black is nice but add some color!
-black,white,black,brown,6,Black shoes should always be worn with a black suit
-black,white,rBlue,black,7,Navy tie with a black suit is never good try another color.
-black,white,rBlue,brown,5,Navy tie with a black suit is never good try another color. Black shoes should always be worn with a black suit
+Black,white,black,brown,6,Black shoes should always be worn with a black suit
+black,white,navy,black,7,Navy tie with a black suit is never good try another color.
+black,white,navy,brown,5,Navy tie with a black suit is never good try another color. Black shoes should always be worn with a black suit
 black,white,lBlue,black,10,
 black,white,lBlue,brown,8,Black shoes should always be worn with a black suit
 black,white,red,black,10,
 black,white,red,brown,8,Black shoes should always be worn with a black suit
 black,white,lavender,black,10,
 black,white,lavender,brown,8,Black shoes should always be worn with a black suit
-black,white,orange,black,10,
+Black,white,orange,black,10,
 black,white,orange,brown,8,Black shoes should always be worn with a black suit
 black,white,brown,black,8,
 black,white,brown,brown,5,Black shoes should always be worn with a black suit
@@ -18,16 +18,16 @@ black,white,green,brown,8,Black shoes should always be worn with a black suit
 black,white,yellow,black,10,
 black,white,yellow,brown,8,Black shoes should always be worn with a black suit
 black,gray,black,black,10,
-black,gray,black,brown,8,Black shoes should always be worn with a black suit
-black,gray,rBlue,black,4,Too many dark- pick only one!
-black,gray,rBlue,brown,1,Too many darks- pick only one or two!
+Black,gray,black,brown,8,Black shoes should always be worn with a black suit
+black,gray,navy,black,4,Too many dark- pick only one!
+black,gray,navy,brown,1,Too many darks- pick only one or two!
 black,gray,lBlue,black,10,
 black,gray,lBlue,brown,8,Black shoes should always be worn with a black suit
 black,gray,red,black,10,
 black,gray,red,brown,7,Black shoes should always be worn with a black suit
 black,gray,lavender,black,10,
 black,gray,lavender,brown,8,Black shoes should always be worn with a black suit
-black,gray,orange,black,10,
+Black,gray,orange,black,10,
 black,gray,orange,brown,8,Black shoes should always be worn with a black suit
 black,gray,brown,black,6,Too many darks- pick only one or two!
 black,gray,brown,brown,5,Black shoes should always be worn with a black suit. Too many darks- pick only one or two
@@ -37,8 +37,8 @@ black,gray,yellow,black,10,
 black,gray,yellow,brown,6,Black shoes should always be worn with a black suit. Too many darks- pick only one or two
 black,lBlue,black,black,10,
 black,lBlue,black,brown,7,Black shoes should always be worn with a black suit
-black,lBlue,rBlue,black,8,Navy tie with a black suit is never good try another color.
-black,lBlue,rBlue,brown,6,Navy tie with a black suit is never good try another color. Black shoes should always be worn with a black suit
+black,lBlue,navy,black,8,Navy tie with a black suit is never good try another color.
+black,lBlue,navy,brown,6,Navy tie with a black suit is never good try another color. Black shoes should always be worn with a black suit
 black,lBlue,lBlue,black,9,
 black,lBlue,lBlue,brown,7,Black shoes should always be worn with a black suit
 black,lBlue,red,black,10,
@@ -55,8 +55,8 @@ black,lBlue,yellow,black,10,
 black,lBlue,yellow,brown,8,Black shoes should always be worn with a black suit
 black,rBlue,black,black,10,
 black,rBlue,black,brown,8,Black shoes should always be worn with a black suit
-black,rBlue,rBlue,black,8,Too many darks- pick only one or two!
-black,rBlue,rBlue,brown,6,Too many darks- pick only one or two! Black shoes should always be worn with a black suit
+black,rBlue,navy,black,8,Too many darks- pick only one or two!
+black,rBlue,navy,brown,6,Too many darks- pick only one or two! Black shoes should always be worn with a black suit
 black,rBlue,lBlue,black,10,
 black,rBlue,lBlue,brown,8,Black shoes should always be worn with a black suit
 black,rBlue,red,black,10,
@@ -73,8 +73,8 @@ black,rBlue,yellow,black,10,
 black,rBlue,yellow,brown,8,Black shoes should always be worn with a black suit
 black,lavender,black,black,10,
 black,lavender,black,brown,8,Black shoes should always be worn with a black suit
-black,lavender,rBlue,black,8,Navy tie with a black suit is never good try another color.
-black,lavender,rBlue,brown,6,Black shoes should always be worn with a black suit
+black,lavender,navy,black,8,Navy tie with a black suit is never good try another color.
+black,lavender,navy,brown,6,Black shoes should always be worn with a black suit
 black,lavender,lBlue,black,10,
 black,lavender,lBlue,brown,8,Black shoes should always be worn with a black suit
 black,lavender,red,black,9,That's a unique shirt and tie combo make sure they compliment each other
@@ -91,8 +91,8 @@ black,lavender,yellow,black,10,
 black,lavender,yellow,brown,8,Black shoes should always be worn with a black suit
 navy,white,black,black,6,Try wearing brown shoes with a navy suit.  A black tie should not be worn with a navy suit
 navy,white,black,brown,8,A black tie should not be worn with a navy suit
-navy,white,rBlue,black,9,Try wearing brown shoes with a navy suit
-navy,white,rBlue,brown,10,
+navy,white,navy,black,9,Try wearing brown shoes with a navy suit
+navy,white,navy,brown,10,
 navy,white,lBlue,black,9,Try wearing brown shoes with a navy suit
 navy,white,lBlue,brown,10,Make sure there is enough pattern to keep you from looking like a democrat candidate
 navy,white,red,black,9,Try wearing brown shoes with a navy suit
@@ -106,11 +106,11 @@ navy,white,brown,brown,9,
 navy,white,green,black,8,Try wearing brown shoes with a navy suit
 navy,white,green,brown,10,
 navy,white,yellow,black,9,Try wearing brown shoes with a navy suit
-navy,white,yellow,brown,10,
+navy,white,yellow,brown,10,Classic colors can't go wrong with this look.
 navy,gray,black,black,5,Try wearing brown shoes with a navy suit
 navy,gray,black,brown,6,Lose the black tie and this would be a great look 
-navy,gray,rBlue,black,6,Try wearing brown shoes with a navy suit
-navy,gray,rBlue,brown,10,
+navy,gray,navy,black,6,Try wearing brown shoes with a navy suit
+navy,gray,navy,brown,10,
 navy,gray,lBlue,black,9,Try wearing brown shoes with a navy suit
 navy,gray,lBlue,brown,10,
 navy,gray,red,black,9,Try wearing brown shoes with a navy suit
@@ -127,8 +127,8 @@ navy,gray,yellow,black,9,Try wearing brown shoes with a navy suit
 navy,gray,yellow,brown,10,
 navy,lBlue,black,black,7,Try wearing brown shoes with a navy suit
 navy,lBlue,black,brown,9,
-navy,lBlue,rBlue,black,9,Try wearing brown shoes with a navy suit
-navy,lBlue,rBlue,brown,10,
+navy,lBlue,navy,black,9,Try wearing brown shoes with a navy suit
+navy,lBlue,navy,brown,10,
 navy,lBlue,lBlue,black,8,Try wearing brown shoes with a navy suit
 navy,lBlue,lBlue,brown,9,
 navy,lBlue,red,black,9,Try wearing brown shoes with a navy suit
@@ -145,8 +145,8 @@ navy,lBlue,yellow,black,9,Try wearing brown shoes with a navy suit
 navy,lBlue,yellow,brown,10,
 navy,rBlue,black,black,6,Try wearing brown shoes with a navy suit
 navy,rBlue,black,brown,7,Lose the black tie and this would be a great look 
-navy,rBlue,rBlue,black,8,Try wearing brown shoes with a navy suit
-navy,rBlue,rBlue,brown,8,Too many blues- change the shirt to a different color-try white grey or lavender
+navy,rBlue,navy,black,8,Try wearing brown shoes with a navy suit
+navy,rBlue,navy,brown,8,Too many blues- change the shirt to a different color-try white grey or lavender
 navy,rBlue,lBlue,black,6,Try wearing brown shoes with a navy suit
 navy,rBlue,lBlue,brown,7,Too many blues- change the shirt to a different color-try white grey or lavender
 navy,rBlue,red,black,9,Try wearing brown shoes with a navy suit
@@ -163,8 +163,8 @@ navy,rBlue,yellow,black,9,Try wearing brown shoes with a navy suit
 navy,rBlue,yellow,brown,10,
 navy,lavender,black,black,7,Try wearing brown shoes with a navy suit. A black tie should not be worn with a navy suit
 navy,lavender,black,brown,8,A black tie should not be worn with a navy suit
-navy,lavender,rBlue,black,9,Try wearing brown shoes with a navy suit
-navy,lavender,rBlue,brown,10,
+navy,lavender,navy,black,9,Try wearing brown shoes with a navy suit
+navy,lavender,navy,brown,10,
 navy,lavender,lBlue,black,9,Try wearing brown shoes with a navy suit
 navy,lavender,lBlue,brown,10,
 navy,lavender,red,black,8,Try wearing brown shoes with a navy suit
@@ -180,99 +180,99 @@ navy,lavender,green,brown,10,That's a unique shirt and tie combo make sure they 
 navy,lavender,yellow,black,9,Try wearing brown shoes with a navy suit
 navy,lavender,yellow,brown,10,
 dGray,white,black,black,9,
-dGray,white,black,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,white,rBlue,black,10,
-dGray,white,rBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,black,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,navy,black,10,
+dGray,white,navy,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,lBlue,black,10,
-dGray,white,lBlue,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,lBlue,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,red,black,10,
-dGray,white,red,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,red,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,lavender,black,10,
-dGray,white,lavender,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,lavender,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,orange,black,10,
-dGray,white,orange,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,orange,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,brown,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,white,brown,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,white,green,black,10,
-dGray,white,green,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,brown,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,green,black,10,Classic colors can't go wrong with this look.
+dGray,white,green,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,white,yellow,black,10,
-dGray,white,yellow,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,white,yellow,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,black,black,10,
-dGray,gray,black,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,gray,rBlue,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,gray,rBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,black,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,navy,black,8,Try wearing a brighter tie with a couple of dark colors
+dGray,gray,navy,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,lBlue,black,10,
-dGray,gray,lBlue,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,lBlue,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,red,black,10,
-dGray,gray,red,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,red,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,lavender,black,10,
-dGray,gray,lavender,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,lavender,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,orange,black,10,
-dGray,gray,orange,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,orange,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,brown,black,8,
-dGray,gray,brown,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,brown,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,green,black,10,
-dGray,gray,green,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,green,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,gray,yellow,black,10,
-dGray,gray,yellow,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,gray,yellow,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,black,black,10,
-dGray,lBlue,black,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,lBlue,rBlue,black,8,
-dGray,lBlue,rBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,black,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,navy,black,8,
+dGray,lBlue,navy,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,lBlue,black,8,Matching your shirt and tie is tricky- make sure they are the exact same shade and there is at least one pattern
-dGray,lBlue,lBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,lBlue,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,red,black,10,
-dGray,lBlue,red,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,red,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,lavender,black,10,
-dGray,lBlue,lavender,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,lavender,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,orange,black,10,
-dGray,lBlue,orange,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,orange,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,brown,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,lBlue,brown,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,brown,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,green,black,10,
-dGray,lBlue,green,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,green,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lBlue,yellow,black,10,
-dGray,lBlue,yellow,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lBlue,yellow,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,black,black,10,
-dGray,rBlue,black,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,rBlue,rBlue,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,rBlue,rBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,black,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,navy,black,8,Try wearing a brighter tie with a couple of dark colors
+dGray,rBlue,navy,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,lBlue,black,9,Too many blues- change the shirt to a different color-try white grey or lavender
-dGray,rBlue,lBlue,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,lBlue,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,red,black,10,
-dGray,rBlue,red,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,red,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,lavender,black,10,
-dGray,rBlue,lavender,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,lavender,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,orange,black,10,
-dGray,rBlue,orange,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,orange,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,brown,black,9,Try wearing a brighter tie with a couple of dark colors
-dGray,rBlue,brown,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,brown,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,green,black,10,
-dGray,rBlue,green,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,green,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,rBlue,yellow,black,10,
-dGray,rBlue,yellow,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,rBlue,yellow,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,black,black,10,
-dGray,lavender,black,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
-dGray,lavender,rBlue,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,lavender,rBlue,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,black,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,navy,black,8,Try wearing a brighter tie with a couple of dark colors
+dGray,lavender,navy,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,lBlue,black,10,
-dGray,lavender,lBlue,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,lBlue,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,red,black,9,
-dGray,lavender,red,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,red,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,lavender,black,8,Matching your shirt and tie is tricky- make sure they are the exact same shade and there is at least one pattern
-dGray,lavender,lavender,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes. Matching your shirt and tie is tricky- make sure they are the exact same shade and there is at least one pattern
+dGray,lavender,lavender,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes. Matching your shirt and tie is tricky- make sure they are the exact same shade and there is at least one pattern
 dGray,lavender,orange,black,9,That's a unique shirt and tie combo make sure they compliment each other
-dGray,lavender,orange,brown,8,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,orange,brown,8,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,brown,black,8,Try wearing a brighter tie with a couple of dark colors
-dGray,lavender,brown,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,brown,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,green,black,8,That's a unique shirt and tie combo make sure they compliment each other
-dGray,lavender,green,brown,7,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,green,brown,7,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 dGray,lavender,yellow,black,10,
-dGray,lavender,yellow,brown,9,Dark grey suits sometimes have black threads in them. If this is the case wear black shoes.
+dGray,lavender,yellow,brown,9,Dark Grey suits sometimes have black threads in them. If this is the case wear black shoes.
 lGray,white,black,black,10,
 lGray,white,black,brown,9,Try wearing a brighter tie with a couple of dark colors
-lGray,white,rBlue,black,8,
-lGray,white,rBlue,brown,10,
+lGray,white,navy,black,8,
+lGray,white,navy,brown,10,
 lGray,white,lBlue,black,10,
 lGray,white,lBlue,brown,10,
 lGray,white,red,black,10,
@@ -289,8 +289,8 @@ lGray,white,yellow,black,10,Suits is looking good but you may want to swap for s
 lGray,white,yellow,brown,10,Suits is looking good but you may want to swap for some darker colors if there is an important meeting
 lGray,gray,black,black,10,Suits is looking good but you may want to swap for some darker colors if there is an important meeting
 lGray,gray,black,brown,6,Your suit and shirt should never match! Try wearing a brighter tie with a couple of dark colors
-lGray,gray,rBlue,black,4,Your suit and shirt should never match! Try wearing a brighter tie with a couple of dark colors
-lGray,gray,rBlue,brown,8,Your suit and shirt should never match!
+lGray,gray,navy,black,4,Your suit and shirt should never match! Try wearing a brighter tie with a couple of dark colors
+lGray,gray,navy,brown,8,Your suit and shirt should never match!
 lGray,gray,lBlue,black,8,Your suit and shirt should never match!
 lGray,gray,lBlue,brown,8,Your suit and shirt should never match!
 lGray,gray,red,black,8,Your suit and shirt should never match!
@@ -307,8 +307,8 @@ lGray,gray,yellow,black,8,Your suit and shirt should never match!
 lGray,gray,yellow,brown,7,Your suit and shirt should never match!
 lGray,lBlue,black,black,10,
 lGray,lBlue,black,brown,8,Swap your brown shoes for some black ones
-lGray,lBlue,rBlue,black,8,
-lGray,lBlue,rBlue,brown,10,
+lGray,lBlue,navy,black,8,
+lGray,lBlue,navy,brown,10,
 lGray,lBlue,lBlue,black,8,
 lGray,lBlue,lBlue,brown,8,
 lGray,lBlue,red,black,10,
@@ -325,8 +325,8 @@ lGray,lBlue,yellow,black,10,
 lGray,lBlue,yellow,brown,10,
 lGray,rBlue,black,black,10,
 lGray,rBlue,black,brown,8,
-lGray,rBlue,rBlue,black,7,Try wearing a brighter tie with a couple of dark colors
-lGray,rBlue,rBlue,brown,8,Try wearing a brighter tie with a couple of dark colors
+lGray,rBlue,navy,black,7,Try wearing a brighter tie with a couple of dark colors
+lGray,rBlue,navy,brown,8,Try wearing a brighter tie with a couple of dark colors
 lGray,rBlue,lBlue,black,9,Too many blues- change the shirt to a different color-try white grey or lavender
 lGray,rBlue,lBlue,brown,9,Too many blues- change the shirt to a different color-try white grey or lavender
 lGray,rBlue,red,black,10,
@@ -343,8 +343,8 @@ lGray,rBlue,yellow,black,10,
 lGray,rBlue,yellow,brown,10,
 lGray,lavender,black,black,10,
 lGray,lavender,black,brown,8,
-lGray,lavender,rBlue,black,8,Swap your black shoes for some brown ones
-lGray,lavender,rBlue,brown,10,
+lGray,lavender,navy,black,8,Swap your black shoes for some brown ones
+lGray,lavender,navy,brown,10,
 lGray,lavender,lBlue,black,10,
 lGray,lavender,lBlue,brown,10,
 lGray,lavender,red,black,10,That's a unique shirt and tie combo make sure they compliment each other
@@ -361,10 +361,10 @@ lGray,lavender,yellow,black,9,That's a unique shirt and tie combo make sure they
 lGray,lavender,yellow,brown,9,That's a unique shirt and tie combo make sure they compliment each other
 brown,white,black,black,7,Too many dark colors add some color! Brown shoes should be worn with a brown suit.
 brown,white,black,brown,6.5,Too many dark colors add some color!
-brown,white,rBlue,black,8.5,Brown shoes should be worn with a brown suit
-brown,white,rBlue,brown,10,
+brown,white,navy,black,8.5,Brown shoes should be worn with a brown suit
+brown,white,navy,brown,10,
 brown,white,lBlue,black,8.5,Brown shoes should be worn with a brown suit
-brown,white,lBlue,brown,10,
+brown,white,lBlue,brown,10,Classic colors can't go wrong with this look.
 brown,white,red,black,8.5,Brown shoes should be worn with a brown suit
 brown,white,red,brown,10,
 brown,white,lavender,black,8.5,Brown shoes should be worn with a brown suit
@@ -379,8 +379,8 @@ brown,white,yellow,black,8.5,Brown shoes should be worn with a brown suit
 brown,white,yellow,brown,10,
 brown,gray,black,black,6.5,Brown shoes should be worn with a brown suit. Too many neutrals add some color!
 brown,gray,black,brown,8,Too many neutrals add some color!
-brown,gray,rBlue,black,6.5,Brown shoes should be worn with a brown suit. Too many neutrals add some color!
-brown,gray,rBlue,brown,8,Too many neutrals add some color!
+brown,gray,navy,black,6.5,Brown shoes should be worn with a brown suit. Too many neutrals add some color!
+brown,gray,navy,brown,8,Too many neutrals add some color!
 brown,gray,lBlue,black,6.5,Brown shoes should be worn with a brown suit
 brown,gray,lBlue,brown,8,
 brown,gray,red,black,6.5,Brown shoes should be worn with a brown suit
@@ -397,8 +397,8 @@ brown,gray,yellow,black,6.5,Brown shoes should be worn with a brown suit
 brown,gray,yellow,brown,8,
 brown,lBlue,black,black,7.5,Brown shoes should be worn with a brown suit. Too many neutrals add some color!
 brown,lBlue,black,brown,9,Swap the tie for a more colorful tie
-brown,lBlue,rBlue,black,8.5,Brown shoes should be worn with a brown suit
-brown,lBlue,rBlue,brown,10,
+brown,lBlue,navy,black,8.5,Brown shoes should be worn with a brown suit
+brown,lBlue,navy,brown,10,
 brown,lBlue,lBlue,black,7.5,Brown shoes should be worn with a brown suit
 brown,lBlue,lBlue,brown,9,
 brown,lBlue,red,black,8.5,Brown shoes should be worn with a brown suit
@@ -415,8 +415,8 @@ brown,lBlue,yellow,black,8.5,Brown shoes should be worn with a brown suit
 brown,lBlue,yellow,brown,10,
 brown,rBlue,black,black,6.5,Brown shoes should be worn with a brown suit
 brown,rBlue,black,brown,8,
-brown,rBlue,rBlue,black,8,Brown shoes should be worn with a brown suit
-brown,rBlue,rBlue,brown,9.5,
+brown,rBlue,navy,black,8,Brown shoes should be worn with a brown suit
+brown,rBlue,navy,brown,9.5,
 brown,rBlue,lBlue,black,7.5,Brown shoes should be worn with a brown suit
 brown,rBlue,lBlue,brown,9,
 brown,rBlue,red,black,8.5,Brown shoes should be worn with a brown suit
@@ -433,8 +433,8 @@ brown,rBlue,yellow,black,8.5,Brown shoes should be worn with a brown suit
 brown,rBlue,yellow,brown,10,
 brown,lavender,black,black,6.5,Brown shoes should be worn with a brown suit
 brown,lavender,black,brown,8,
-brown,lavender,rBlue,black,8.5,Brown shoes should be worn with a brown suit
-brown,lavender,rBlue,brown,10,
+brown,lavender,navy,black,8.5,Brown shoes should be worn with a brown suit
+brown,lavender,navy,brown,10,
 brown,lavender,lBlue,black,8.5,Brown shoes should be worn with a brown suit
 brown,lavender,lBlue,brown,10,
 brown,lavender,red,black,8.5,Brown shoes should be worn with a brown suit

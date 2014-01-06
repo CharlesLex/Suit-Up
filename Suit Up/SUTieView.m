@@ -35,7 +35,14 @@
     }
     [sender setSelected:YES];
 }
-
+-(void)updateTie:(NSString*)tieColor andTexture:(NSString*)tieTexture{
+    _color = tieColor;
+    _texture = tieTexture;
+    [self updateImage];
+    for(UIButton *btn in _buttons){
+        [btn setSelected:NO];
+    }
+}
 - (IBAction)whiteButton:(id)sender {
     _color = @"white";
     self.controller.tieColor = @"white";
