@@ -79,15 +79,15 @@
 }
 
 - (IBAction)stripedButtonPressed:(id)sender {
-    _texture = @"striped";
-    self.controller.suitTexture = @"striped";
+    _texture = @"stripe";
+    self.controller.suitTexture = @"stripe";
     [self adjustImage];
 
 }
 
 - (IBAction)texturedButtonPressed:(id)sender {
-    _texture = @"textured";
-    self.controller.suitTexture = @"textured";
+    _texture = @"texture";
+    self.controller.suitTexture = @"texture";
     [self adjustImage];
 
 }
@@ -99,7 +99,7 @@
 
 }
 -(void)adjustImage{
-    if([_texture isEqualToString:@"striped"]){
+    if([_texture isEqualToString:@"stripe"]){
         if([_color isEqualToString:@"black"]){
             _suit.image = [UIImage imageNamed:@"SUITBLST"];
         }
@@ -120,7 +120,7 @@
             
         }
     }
-    else if([_texture isEqualToString:@"textured"]){
+    else if([_texture isEqualToString:@"texture"]){
         if([_color isEqualToString:@"black"]){
             _suit.image = [UIImage imageNamed:@"SUITBLT"];
         }

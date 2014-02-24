@@ -34,4 +34,5 @@
 - (IBAction)solidButtonPressed:(id)sender;
 - (void)setSuit:(UIImageView *)suit andView:(SUViewController *)controller;
 -(void)updateSuit:(NSString*)suitColor andTexture:(NSString*)suitTexture;
+-(void)adjustImage;
 @end

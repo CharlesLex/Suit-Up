@@ -37,25 +37,42 @@
     else{
         _size = [NSNumber numberWithInt:57];
     }
+    UISwipeGestureRecognizer *mSwipeUpRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(hideMenu)];
+    
+    [mSwipeUpRecognizer setDirection:UISwipeGestureRecognizerDirectionLeft];
+    
+    [[self view] addGestureRecognizer:mSwipeUpRecognizer];
+    
     _doubleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
-    _shirtTexture = @"gingham";
-    _tieTexture = @"large stripe";
-    _suitTexture = @"striped";
-    _suitColor = @"black";
-    _shirtColor = @"gray";
-    _tieColor = @"lavender";
-    _shoeColor = @"brown";
+    [self initWithSelection:@"stripe" andshirt:@"gingham" andTie:@"large stripe" withColor:@"black" shirtColor:@"gray" tieColor:@"lavender" andShoeColor:@"brown"];
     _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(123, 295, 320, 50)];
     _scrollView.maximumZoomScale = 2.0;
     _scrollView.minimumZoomScale = 1.0;
     _scrollView.clipsToBounds = YES;
     _scrollView.delegate = self;
-    _scrollView.scrollEnabled = NO;
+   // _scrollView.scrollEnabled = NO;
+    [_scrollView setScrollEnabled:YES];
     [self initViews];
     [self setUpComments];
 }
+-(void)initWithSelection:(NSString*)suitText andshirt:(NSString*)shirtText andTie:(NSString*)tieText withColor:(NSString*)suitColor shirtColor:(NSString*)shirtColor tieColor:(NSString*)tieColor andShoeColor:(NSString*)shoeColor
+{
+    NSLog(@"Here");
+    _suitTexture = suitText;
+    _shirtTexture = shirtText;
+    _tieTexture = tieText;
+    _suitColor = suitColor;
+    _shirtColor = shirtColor;
+    _tieColor = tieColor;
+    _shoeColor = shoeColor;
+    [_suitView updateSuit:_suitColor andTexture:_suitTexture];
+    [_shirtView updateShirt:_shirtColor andTexture:_shirtTexture];
+    [_tieView updateTie:_tieColor andTexture:_tieTexture];
+    [_shoeView updateShoes:_shoeColor];
+}
 -(void)setUpComments{
     _positive_comments = [[NSMutableArray alloc]initWithObjects:@"Looking sharp!",@"You’re good to go!",@"You’re dressed for a promotion!",@"You’re gunning for your boss’ job.",@"You’ll be making the right impression today.",@"You might be catching looks on your lunch break.",nil];
+    _mid_comments = [[NSMutableArray alloc]initWithObjects:@"Not bad but you can look better", nil];
     _negative_comments = [[NSMutableArray alloc]initWithObjects:@"You can do better",@"That suit won't get you anywhere",@"You look like a clown",@"Really?",nil];
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -95,10 +112,19 @@
 }
 -(void)setUpTextureData{
     NSString *txtFilePath = [[NSBundle mainBundle] pathForResource:@"Texture" ofType:@"csv"];
-    NSArray *arrayOfDictionaries = [CSVParser parseCSVIntoArrayOfDictionariesFromFile:txtFilePath
+    __block NSArray *arrayOfDicts;
+    [CSVParser parseCSVIntoArrayOfDictionariesFromFile:txtFilePath
                                                          withSeparatedCharacterString:@","
-                                                                 quoteCharacterString:@"\""];
-    _textureRating = [arrayOfDictionaries mutableCopy];
+                                                                 quoteCharacterString:@"\""
+                                                         withBlock:^(NSArray *array, NSError *error){
+                                                            if(error){
+                                                                NSLog(@"%@",[error localizedDescription]);
+                                                            }
+                                                            else{
+                                                                arrayOfDicts = array;
+                                                                _textureRating = [arrayOfDicts mutableCopy];
+                                                            }
+                                                         }];
 
 }
 -(void)setUpColorData{
@@ -122,6 +148,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)exitButton:(id)sender {
+    exit(0);
+}
+
 - (IBAction)checkSuit:(id)sender {
     if(!_shoeView){
         _shoeColor = @"brown";
@@ -140,9 +170,6 @@
 
     NSString *rating = [[filtered firstObject]objectForKey:@"Rating"];
     _comment1 = [[filtered firstObject]objectForKey:@"Comment"];
-    if(!_comment1){_comment1 = @"Lookin' Good!";}
-    NSLog(@"LOOKING FOR: %@, %@, %@, %@", suitColorFilter, shirtColorFilter , tieColorFilter, shoeColorFilter);
-    NSLog(@"Rating: %@",rating);
     
     NSPredicate *suitTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Suit LIKE '%@'",_suitTexture]];
     NSPredicate *shirtTextureFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shirt LIKE '%@'",_shirtTexture]];
@@ -152,16 +179,17 @@
                          filteredArrayUsingPredicate:shirtTextureFilter]
                         filteredArrayUsingPredicate:tieTextureFilter];
     NSString *rating2 = [[texture firstObject]objectForKey:@"Rating"];
-    _comment2 = [[texture firstObject]objectForKey:@"Comments"];
+    _comment2 = [[texture firstObject]objectForKey:@"Comment"];
     
+    _total = [NSNumber numberWithFloat:((([rating floatValue] + [rating2 floatValue])/2.0)*10)];
     
-    if(!_comment2){_comment2 = @"Nice Suit!";}
-
-
-    _total = [NSNumber numberWithFloat:((([rating integerValue] + [rating2 integerValue])/2)*10)];
-    if([_total intValue] > 80){
+    if([_total intValue] >= 70){
         int random = arc4random() % 5;
         _comment3 = [_positive_comments objectAtIndex:random];
+    }
+    else if([_total intValue] >= 50){
+        int random = arc4random() % 1;
+        _comment3 = [_mid_comments objectAtIndex:random];
     }
     else{
         int random = arc4random() % 3;
@@ -174,6 +202,9 @@
     self.popup2 = [[SURatingPopup alloc]initWithFrame:CGRectMake(0, 0, 200, 200) andTip1:comment andTip2:comment2 andRating:total];
     */
     
+}
+-(void)hideMenu{
+    [self hideAll];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     SUCommentViewController *view = segue.destinationViewController;
@@ -302,6 +333,14 @@
     [_shirtView removeFromSuperview];
     [_tieView removeFromSuperview];
     [_shoeView removeFromSuperview];
+    [self.scrollView setZoomScale:1 animated:YES];
+    for(UIButton *button in _buttonArray){
+        [button setSelected:NO];
+    }
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self hideAll];
 }
 -(void)displaySuit:(Suit*)suit{
     _shirtTexture = suit.shirt_texture;

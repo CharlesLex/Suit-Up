@@ -14,7 +14,7 @@
 #import "SUOpenView.h"
 #import "Suit.h"
 @class SUSuitView,SUShirtView,SUTieView,SUOpenView;
-@interface SUViewController : UIViewController <UIScrollViewDelegate>
+@interface SUViewController : UIViewController <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 @property (strong, nonatomic) IBOutlet UIView *images;
 @property (strong, nonatomic) IBOutlet UIImageView *shoes;
 @property (strong, nonatomic) IBOutlet UIImageView *shirtNeck;
@@ -48,7 +48,9 @@
 @property (nonatomic,retain) NSString *comment3;
 @property (nonatomic,retain) NSNumber *total;
 @property (nonatomic,retain) NSMutableArray *positive_comments;
+@property (nonatomic,retain) NSMutableArray *mid_comments;
 @property (nonatomic,retain) NSMutableArray *negative_comments;
+- (IBAction)exitButton:(id)sender;
 
 - (IBAction)checkSuit:(id)sender;
 - (IBAction)openButton:(id)sender;
@@ -57,4 +59,6 @@
 - (IBAction)tieButton:(id)sender;
 - (IBAction)shoesButton:(id)sender;
 -(void)displaySuit:(Suit*)suit;
+-(void)initWithSelection:(NSString*)suitText andshirt:(NSString*)shirtText andTie:(NSString*)tieText withColor:(NSString*)suitColor shirtColor:(NSString*)shirtColor tieColor:(NSString*)tieColor andShoeColor:(NSString*)shoeColor;
+-(void)hideMenu;
 @end

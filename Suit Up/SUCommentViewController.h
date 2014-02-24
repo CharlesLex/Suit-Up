@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "SUViewController.h"
-@interface SUCommentViewController : UIViewController <UIAlertViewDelegate>
+#import "CorePlotHeaders/CPTPlot.h"
+#import "CorePlotHeaders/CPTGraph.h"
+
+@interface SUCommentViewController : UIViewController <UIAlertViewDelegate,CPTPlotDataSource, UIActionSheetDelegate>
 @property (nonatomic,retain) NSString *comment1;
 @property (nonatomic,retain) NSString *comment2;
 @property (nonatomic,retain) NSString *comment3;
@@ -25,9 +28,19 @@
 @property (nonatomic,retain) NSString *tieTexture;
 
 
+@property (nonatomic, strong) CPTGraphHostingView *hostView;
+@property (nonatomic, strong) CPTTheme *selectedTheme;
+@property (strong, nonatomic) IBOutlet UIView *plotView;
+
 -(void)setUpWithTitle:(NSNumber*)total com1:(NSString*)com1 com2:(NSString*)com2 com3:(NSString*)com3;
 -(void)setColorSelection:(NSString*)suitColor andShirt:(NSString*)shirtColor andTie:(NSString*)tieColor andShoes:(NSString*)shoeColor;
 -(void)setTextureSelection:(NSString*)suitTexture andShirt:(NSString*)shirtTexture andTie:(NSString*)tieTexture;
 -(void)setController:(SUViewController *)controller;
+- (IBAction)tryAgainPushed:(id)sender;
 
+-(void)initPlot;
+-(void)configureHost;
+-(void)configureGraph;
+-(void)configureChart;
+-(void)configureLegend;
 @end

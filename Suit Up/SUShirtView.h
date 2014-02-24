@@ -40,4 +40,6 @@
 - (IBAction)ginghamButton:(id)sender;
 - (IBAction)solidButton:(id)sender;
 -(void)updateShirt:(NSString*)shirtColor andTexture:(NSString*)shirtTexture;
+-(void)updateImage;
+
 @end

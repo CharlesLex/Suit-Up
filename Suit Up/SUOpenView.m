@@ -70,6 +70,8 @@
     [_controller displaySuit:suit];
 }
 - (IBAction)startNew:(id)sender {
+    [_controller initWithSelection:@"stripe" andshirt:@"gingham" andTie:@"large stripe" withColor:@"black" shirtColor:@"gray" tieColor:@"lavender" andShoeColor:@"brown"];
+    [_controller hideMenu];
     [self removeFromSuperview];
 }
 /*

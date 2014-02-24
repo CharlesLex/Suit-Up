@@ -1,61 +1,61 @@
-Suit,Shirt,Tie,Rating,Comments
-Solid,Solid,solid,6.5,Too many solids! Add some pattern!
-Solid,solid,small stripe,9,
-Solid,solid,large stripe,9,
-Solid,solid,pattern,9,
+Suit,Shirt,Tie,Rating,Comment
+solid,solid,solid,6.5,Too many solids! Add some pattern!
+solid,solid,small stripe,9,
+solid,solid,large stripe,9,
 solid,solid,gingham,9,
+solid,solid,plaid,9,
 solid,small stripe,solid,8.5,
 solid,small stripe,small stripe,8.5,A striped shirt and striped tie may clash. Two complete stripes should fit inside the other one.
 solid,small stripe,large stripe,10,
-solid,small stripe,pattern,9,
-solid,small stripe,gingham,9.5,
+solid,small stripe,gingham,9,
+solid,small stripe,plaid,9.5,
 solid,large stripe,solid,8,
 solid,large stripe,small stripe,10,
 solid,large stripe,large stripe,7.5,Large stripes need to be paired with small stripes!
-solid,large stripe,pattern,8,Make sure the tie pattern is at least twice as big as the stripes on your shirt.
-solid,large stripe,gingham,8,
+solid,large stripe,gingham,8,Make sure the tie pattern is at least twice as big as the stripes on your shirt.
+solid,large stripe,plaid,8,
 solid,gingham,solid,8,
 solid,gingham,small stripe,8.5,This is a tricky pattern mix- make sure the patterns are different sizes.
 solid,gingham,large stripe,8,This is a tricky pattern mix- make sure the patterns are different sizes.
-solid,gingham,pattern,7,This is a tricky pattern mix- make sure the patterns are different sizes.
-solid,gingham,gingham,5,Plaid on plaid? Looking a little square.
-striped,Solid,solid,8.5,
-striped,solid,small stripe,9.5,
-striped,solid,large stripe,10,
-striped,solid,pattern,10,
-striped,solid,gingham,10,
-striped,small stripe,solid,10,
-striped,small stripe,small stripe,5,Too many patterns! Add a solid!
-striped,small stripe,large stripe,5.5,Too many patterns! Add a solid!
-striped,small stripe,pattern,7,Too many patterns! Add a solid!
-striped,small stripe,gingham,9,This is a tricky pattern mix- make sure the patterns are different sizes.
-striped,large stripe,solid,9.5,This is a winner if the patterns are different sizes!
-striped,large stripe,small stripe,9.5,This is a winner if the patterns are different sizes!
-striped,large stripe,large stripe,8,This is a winner if the patterns are different sizes!
-striped,large stripe,pattern,8.5,Too many patterns! Add a solid!
-striped,large stripe,gingham,8,Too many patterns! Add a solid!
-striped,gingham,solid,10,Great mix of patterns!
-striped,gingham,small stripe,7.5,Too many patterns! Add a solid!
-striped,gingham,large stripe,5,Too many patterns! Add a solid!
-striped,gingham,pattern,6.5,Too many patterns! Add a solid!
-striped,gingham,gingham,5,Too many patterns! Add a solid!
-texture,Solid,solid,8.5,
+solid,gingham,gingham,7,This is a tricky pattern mix- make sure the patterns are different sizes.
+solid,gingham,plaid,5,Plaid on plaid? Looking a little square.
+stripe,solid,solid,8.5,
+stripe,solid,small stripe,9.5,
+stripe,solid,large stripe,10,
+stripe,solid,gingham,10,
+stripe,solid,plaid,10,
+stripe,small stripe,solid,10,
+stripe,small stripe,small stripe,5,Too many patterns! Add a solid!
+stripe,small stripe,large stripe,5.5,Too many patterns! Add a solid!
+stripe,small stripe,gingham,7,Too many patterns! Add a solid!
+stripe,small stripe,plaid,9,This is a tricky pattern mix- make sure the patterns are different sizes.
+stripe,large stripe,solid,9.5,This is a winner if the patterns are different sizes!
+stripe,large stripe,small stripe,9.5,This is a winner if the patterns are different sizes!
+stripe,large stripe,large stripe,8,This is a winner if the patterns are different sizes!
+stripe,large stripe,gingham,8.5,Too many patterns! Add a solid!
+stripe,large stripe,plaid,8,Too many patterns! Add a solid!
+stripe,gingham,solid,10,Great mix of patterns!
+stripe,gingham,small stripe,7.5,Too many patterns! Add a solid!
+stripe,gingham,large stripe,5,Too many patterns! Add a solid!
+stripe,gingham,gingham,6.5,Too many patterns! Add a solid!
+stripe,gingham,plaid,5,Too many patterns! Add a solid!
+texture,solid,solid,8.5,
 texture,solid,small stripe,10,Great mix of patterns!
 texture,solid,large stripe,10,Great mix of patterns!
-texture,solid,pattern,10,
 texture,solid,gingham,10,
+texture,solid,plaid,10,
 texture,small stripe,solid,9.5,
 texture,small stripe,small stripe,6.5,Too many patterns! Add a solid!
 texture,small stripe,large stripe,8,Too many patterns! Add a solid!
-texture,small stripe,pattern,8,Too many patterns! Add a solid!
-texture,small stripe,gingham,9,
+texture,small stripe,gingham,8,Too many patterns! Add a solid!
+texture,small stripe,plaid,9,
 texture,large stripe,solid,8,Too many patterns! Add a solid!
 texture,large stripe,small stripe,9.5,
 texture,large stripe,large stripe,8.5,
-texture,large stripe,pattern,10,
 texture,large stripe,gingham,10,
+texture,large stripe,plaid,10,
 texture,gingham,solid,10,
 texture,gingham,small stripe,8.5,
 texture,gingham,large stripe,7,Too many patterns! Add a solid!
-texture,gingham,pattern,7,Too many patterns! Add a solid!
-texture,gingham,gingham,6,Too many patterns! Add a solid!
+texture,gingham,gingham,7,Too many patterns! Add a solid!
+texture,gingham,plaid,6,Too many patterns! Add a solid!

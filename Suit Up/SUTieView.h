@@ -52,5 +52,6 @@
 - (IBAction)ginghamButton:(id)sender;
 - (IBAction)solidButton:(id)sender;
 -(void)updateTie:(NSString*)tieColor andTexture:(NSString*)tieTexture;
+-(void)updateImage;
 
 @end
