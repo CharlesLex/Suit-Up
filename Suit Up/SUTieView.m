@@ -19,13 +19,14 @@
     return self;
 }
 
+
 -(void)setTie:(UIImageView *)tie andView:(SUViewController *)controller{
     _tie = tie;
     _texture = controller.tieTexture;
     _color = controller.tieColor;
     self.controller = controller;
     _buttons = [[NSMutableArray alloc]initWithObjects:
-                _blackButton,_brownButton,_greyButton,_lBlueButton,_royalBlueButton,_lavendarButton,_orangeButton,_yellowButton,_greenButton,_whiteButton
+                _blackButton,_brownButton,_greyButton,_lBlueButton,_royalBlueButton,_lavendarButton,_orangeButton,_yellowButton,_greenButton,_redButton
                 , nil];
     
 }
@@ -43,9 +44,9 @@
         [btn setSelected:NO];
     }
 }
-- (IBAction)whiteButton:(id)sender {
-    _color = @"white";
-    self.controller.tieColor = @"white";
+- (IBAction)redButton:(id)sender {
+    _color = @"red";
+    self.controller.tieColor = @"red";
     [self updateImage];
     [self selectButton:sender];
 }
@@ -148,8 +149,8 @@
 }
 -(void)updateImage{
     if([_texture isEqualToString:@"small stripe"]){
-        if([_color isEqualToString:@"white"]){
-            _tie.image = [UIImage imageNamed:@"TIEWSS"];
+        if([_color isEqualToString:@"red"]){
+            _tie.image = [UIImage imageNamed:@"TIERSS"];
         }
         else if([_color isEqualToString:@"lBlue"]){
             _tie.image = [UIImage imageNamed:@"TIELBSS"];
@@ -188,8 +189,8 @@
         }
     }
     else if([_texture isEqualToString:@"large stripe"]){
-        if([_color isEqualToString:@"white"]){
-            _tie.image = [UIImage imageNamed:@"TIEWLS"];
+        if([_color isEqualToString:@"red"]){
+            _tie.image = [UIImage imageNamed:@"TIERLS"];
         }
         else if([_color isEqualToString:@"lBlue"]){
             _tie.image = [UIImage imageNamed:@"TIELBLS"];
@@ -228,8 +229,8 @@
         }
     }
     else if([_texture isEqualToString:@"gingham"]) {
-        if([_color isEqualToString:@"white"]){
-            _tie.image = [UIImage imageNamed:@"TIEWG"];
+        if([_color isEqualToString:@"red"]){
+            _tie.image = [UIImage imageNamed:@"TIERG"];
         }
         else if([_color isEqualToString:@"lBlue"]){
             _tie.image = [UIImage imageNamed:@"TIELBG"];
@@ -269,8 +270,8 @@
         
     }
     else if([_texture isEqualToString:@"solid"]){
-        if([_color isEqualToString:@"white"]){
-            _tie.image = [UIImage imageNamed:@"TIEWS"];
+        if([_color isEqualToString:@"red"]){
+            _tie.image = [UIImage imageNamed:@"TIERS"];
         }
         else if([_color isEqualToString:@"lBlue"]){
             _tie.image = [UIImage imageNamed:@"TIELBS"];

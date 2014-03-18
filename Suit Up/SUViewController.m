@@ -12,6 +12,7 @@
 #import "SURatingPopup.h"
 #import "SUCommentViewController.h"
 #import "Suit.h"
+#import "SUTipViewController.h"
 @interface SUViewController ()
 @property(nonatomic, strong) JKProgressHUD *popup;
 @property(nonatomic, strong) SURatingPopup *popup2;
@@ -195,6 +196,8 @@
         int random = arc4random() % 3;
         _comment3 = [_negative_comments objectAtIndex:random];
     }
+    SUTipViewController *tip = [[SUTipViewController alloc]initWithText:@"Testing" andImage:nil andController:self];
+    [self.view addSubview:tip.view];
 	/*self.popup = [[JKProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 200, 200) andTip:@"Always wear clothes"];
 	[self.popup show];
 	[self performSelector:@selector(hidePopup:) withObject:nil afterDelay:4.0];

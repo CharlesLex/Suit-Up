@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1" customClass="SUTieView">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="99" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNQ-H5-Okg">
@@ -196,12 +196,12 @@
                     <rect key="frame" x="50" y="205" width="37" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" backgroundImage="white_unselected">
+                    <state key="normal" backgroundImage="red_unselected">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <state key="selected" backgroundImage="white_selected"/>
+                    <state key="selected" backgroundImage="red_selected"/>
                     <connections>
-                        <action selector="whiteButton:" destination="1" eventType="touchUpInside" id="IMl-Nf-d1X"/>
+                        <action selector="redButton:" destination="1" eventType="touchUpInside" id="tAm-l3-mLm"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-gR-bqA">
@@ -289,8 +289,8 @@
                 <outlet property="lBlueButton" destination="ZIy-IP-wIr" id="faC-Uc-PEd"/>
                 <outlet property="lavendarButton" destination="tp8-5w-JI9" id="soq-mL-LtF"/>
                 <outlet property="orangeButton" destination="YZq-3w-Hd1" id="UUp-kI-7nz"/>
+                <outlet property="redButton" destination="X8o-z0-U5F" id="pFC-bJ-Nqa"/>
                 <outlet property="royalBlueButton" destination="a3g-ZK-4JU" id="gp2-7D-xcX"/>
-                <outlet property="whiteButton" destination="X8o-z0-U5F" id="cUl-MW-PHz"/>
                 <outlet property="yellowButton" destination="rfa-w3-c5j" id="KZL-mn-R4O"/>
             </connections>
         </view>
@@ -314,10 +314,10 @@
         <image name="pattern_circle" width="283" height="280"/>
         <image name="rBlue_selected" width="75" height="65"/>
         <image name="rBlue_unselected" width="71" height="58"/>
+        <image name="red_selected" width="51" height="64"/>
+        <image name="red_unselected" width="46" height="60"/>
         <image name="small_stripe_circle" width="140" height="140"/>
         <image name="solid_circle" width="140" height="140"/>
-        <image name="white_selected" width="51" height="64"/>
-        <image name="white_unselected" width="46" height="60"/>
         <image name="yellow_selected" width="62" height="69"/>
         <image name="yellow_unselected" width="47" height="54"/>
     </resources>

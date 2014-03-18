@@ -25,7 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *orangeButton;
 @property (strong, nonatomic) IBOutlet UIButton *yellowButton;
 @property (strong, nonatomic) IBOutlet UIButton *greenButton;
-@property (strong, nonatomic) IBOutlet UIButton *whiteButton;
+@property (strong, nonatomic) IBOutlet UIButton *redButton;
 
 
 
@@ -36,7 +36,7 @@
 
 
 -(void)setTie:(UIImageView *)tie andView:(SUViewController *)controller;
-- (IBAction)whiteButton:(id)sender;
+- (IBAction)redButton:(id)sender;
 - (IBAction)lightBlueButton:(id)sender;
 - (IBAction)royalBlueButton:(id)sender;
 - (IBAction)lavendarButton:(id)sender;
