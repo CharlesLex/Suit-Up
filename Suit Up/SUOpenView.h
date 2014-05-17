@@ -14,4 +14,5 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong,nonatomic) SUViewController *controller;
 -(void)setup:(SUViewController*)view;
+-(void)reloadData;
 @end

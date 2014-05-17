@@ -39,6 +39,18 @@
     [_tableView reloadData];
     _controller = view;
 }
+-(void)reloadData{
+    NSError *error;
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Suit" inManagedObjectContext:context];
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc]initWithKey:@"name" ascending:YES];
+    [fetchRequest setEntity:entity];
+    [fetchRequest setSortDescriptors:@[sort]];
+    _suits = [[context executeFetchRequest:fetchRequest error:&error] mutableCopy];
+    [_tableView reloadData];
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

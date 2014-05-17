@@ -24,6 +24,8 @@
 -(id)initWithText:(NSString*)text andImage:(UIImage*)image andController:(SUViewController*)controller{
     self = [super init];
     if (self) {
+    
+        [_rate addTarget:self action:@selector(rate) forControlEvents:UIControlEventTouchUpInside];
         _text_holder = text;
         _image_holder = image;
         _controller = controller;
@@ -34,8 +36,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"hereer");
     _text = [[UITextView alloc]init];
-    _text.text = _text_holder;
+    [_text setFont:[UIFont fontWithName:@"Bariol-Regular" size:4]];
+    [_text setText:@"Do your pants touch the ground when you aren’t wearing shoes? If so, you need to get your pants hemmed."];
     _image = [[UIImageView alloc]initWithImage:_image_holder];
 }
 
@@ -45,7 +49,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)rate:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"Hereerere");
+    [_controller dismissTip];
 }
 @end

@@ -13,7 +13,9 @@
 #import "SUTieView.h"
 #import "SUOpenView.h"
 #import "Suit.h"
-@class SUSuitView,SUShirtView,SUTieView,SUOpenView;
+#import "SUTipViewController.h"
+
+@class SUSuitView,SUShirtView,SUTieView,SUOpenView,SUTipViewController;
 @interface SUViewController : UIViewController <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 @property (strong, nonatomic) IBOutlet UIView *images;
 @property (strong, nonatomic) IBOutlet UIImageView *shoes;
@@ -36,6 +38,7 @@
 @property (strong,nonatomic) SUTieView *tieView;
 @property (strong,nonatomic) SUSuitView *suitView;
 @property (strong,nonatomic) SUOpenView *openView;
+@property (nonatomic,retain) SUTipViewController *tipView;
 @property (strong, nonatomic) NSString *suitColor;
 @property (strong, nonatomic) NSString *shirtColor;
 @property (strong, nonatomic) NSString *tieColor;
@@ -61,4 +64,5 @@
 -(void)displaySuit:(Suit*)suit;
 -(void)initWithSelection:(NSString*)suitText andshirt:(NSString*)shirtText andTie:(NSString*)tieText withColor:(NSString*)suitColor shirtColor:(NSString*)shirtColor tieColor:(NSString*)tieColor andShoeColor:(NSString*)shoeColor;
 -(void)hideMenu;
+-(void)dismissTip;
 @end

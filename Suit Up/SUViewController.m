@@ -51,7 +51,7 @@
     _scrollView.minimumZoomScale = 1.0;
     _scrollView.clipsToBounds = YES;
     _scrollView.delegate = self;
-   // _scrollView.scrollEnabled = NO;
+    [_scrollView setUserInteractionEnabled:YES];
     [_scrollView setScrollEnabled:YES];
     [self initViews];
     [self setUpComments];
@@ -150,7 +150,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)exitButton:(id)sender {
-    exit(0);
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)checkSuit:(id)sender {
@@ -182,7 +182,7 @@
     NSString *rating2 = [[texture firstObject]objectForKey:@"Rating"];
     _comment2 = [[texture firstObject]objectForKey:@"Comment"];
     
-    _total = [NSNumber numberWithFloat:((([rating floatValue] + [rating2 floatValue])/2.0)*10)];
+    _total = [NSNumber numberWithInt:((([rating floatValue] + [rating2 floatValue])/2.0)*10)];
     
     if([_total intValue] >= 70){
         int random = arc4random() % 5;
@@ -196,15 +196,14 @@
         int random = arc4random() % 3;
         _comment3 = [_negative_comments objectAtIndex:random];
     }
-    SUTipViewController *tip = [[SUTipViewController alloc]initWithText:@"Testing" andImage:nil andController:self];
-    [self.view addSubview:tip.view];
-	/*self.popup = [[JKProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 200, 200) andTip:@"Always wear clothes"];
-	[self.popup show];
-	[self performSelector:@selector(hidePopup:) withObject:nil afterDelay:4.0];
-
-    self.popup2 = [[SURatingPopup alloc]initWithFrame:CGRectMake(0, 0, 200, 200) andTip1:comment andTip2:comment2 andRating:total];
-    */
-    
+    _tipView = [[SUTipViewController alloc]initWithText:@"Testing" andImage:nil andController:self];
+    [self.view addSubview:_tipView.view];
+    _tipView.controller = self;
+    //[self performSelector:@selector(dismissTip) withObject:nil afterDelay:3];
+}
+-(void)dismissTip{
+    [_tipView.view removeFromSuperview];
+    [self performSegueWithIdentifier:@"rate" sender:self];
 }
 -(void)hideMenu{
     [self hideAll];
@@ -223,7 +222,9 @@
 - (IBAction)openButton:(id)sender {
     if(![sender isSelected]){
         [self hideAll];
+        [_openView reloadData];
         [self.view addSubview:_openView];
+        
         for(UIButton *button in _buttonArray){
             [button setSelected:NO];
         }
@@ -246,7 +247,7 @@
     }
     [sender setSelected:YES];
         [self.scrollView setZoomScale:1 animated:NO];
-
+        
         [self.scrollView setZoomScale:1.5 animated:YES];
         //images.center = _scrollView.center;
 
@@ -266,9 +267,12 @@
             [button setSelected:NO];
         }
         [sender setSelected:YES];
-        [self.scrollView setZoomScale:1 animated:NO];
-
+        //[self.scrollView setZoomScale:1 animated:NO];
+        [self.scrollView setBounces:NO];
+        [self.scrollView setBouncesZoom:NO];
+        [self.scrollView zoomToRect:[self centeredFrameForScrollView:_scrollView andUIView:_images] animated:YES];
         [self.scrollView setZoomScale:1.5 animated:YES];
+
         
     }
     else{
@@ -332,6 +336,7 @@
     [_shoeView setShoes:_shoes];
 }
 -(void)hideAll{
+    [_openView removeFromSuperview];
     [_suitView removeFromSuperview];
     [_shirtView removeFromSuperview];
     [_tieView removeFromSuperview];
