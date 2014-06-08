@@ -46,13 +46,13 @@
     
     _doubleTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
     [self initWithSelection:@"stripe" andshirt:@"gingham" andTie:@"large stripe" withColor:@"black" shirtColor:@"gray" tieColor:@"lavender" andShoeColor:@"brown"];
-    _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(123, 295, 320, 50)];
-    _scrollView.maximumZoomScale = 2.0;
-    _scrollView.minimumZoomScale = 1.0;
-    _scrollView.clipsToBounds = YES;
-    _scrollView.delegate = self;
-    [_scrollView setUserInteractionEnabled:YES];
-    [_scrollView setScrollEnabled:YES];
+    
+    self.scrollView.delegate = self;
+    [self.scrollView setScrollEnabled:YES];
+    [self.scrollView setMaximumZoomScale:5];
+    [self.scrollView setMinimumZoomScale:1];
+    [self.scrollView setUserInteractionEnabled:YES];
+    [self.scrollView setContentSize:CGSizeMake(320, 586)];
     [self initViews];
     [self setUpComments];
 }
@@ -81,12 +81,12 @@
     [_scrollView setZoomScale:1.01 animated:YES];
 }
 -(void)tapped:(id)sender{
-    NSLog(@"Here");
 }
 - (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView{
-    return _images;
+    return self.images;
 }
 - (CGRect)centeredFrameForScrollView:(UIScrollView *)scroll andUIView:(UIView *)rView {
+    
     CGSize boundsSize = scroll.bounds.size;
     CGRect frameToCenter = rView.frame;
     // center horizontally
@@ -106,34 +106,37 @@
     return frameToCenter;
 }
 -(void)scrollViewDidZoom:(UIScrollView *)scrollView{
-    CGRect new_frame = [self centeredFrameForScrollView:scrollView andUIView:_images];
-    [_images setBounds:new_frame];
-    [self.view setNeedsLayout];
-    
+
+}
+-(UIScrollView *)scrollView{
+    if(!_scrollView){
+        _scrollView =  [[UIScrollView alloc]init];
+    }
+    return _scrollView;
 }
 -(void)setUpTextureData{
     NSString *txtFilePath = [[NSBundle mainBundle] pathForResource:@"Texture" ofType:@"csv"];
     __block NSArray *arrayOfDicts;
     [CSVParser parseCSVIntoArrayOfDictionariesFromFile:txtFilePath
-                                                         withSeparatedCharacterString:@","
-                                                                 quoteCharacterString:@"\""
-                                                         withBlock:^(NSArray *array, NSError *error){
-                                                            if(error){
-                                                                NSLog(@"%@",[error localizedDescription]);
-                                                            }
-                                                            else{
-                                                                arrayOfDicts = array;
-                                                                _textureRating = [arrayOfDicts mutableCopy];
-                                                            }
-                                                         }];
-
+                          withSeparatedCharacterString:@","
+                                  quoteCharacterString:@"\""
+                                             withBlock:^(NSArray *array, NSError *error){
+                                                 if(error){
+                                                     NSLog(@"%@",[error localizedDescription]);
+                                                 }
+                                                 else{
+                                                     arrayOfDicts = array;
+                                                     _textureRating = [arrayOfDicts mutableCopy];
+                                                 }
+                                             }];
+    
 }
 -(void)setUpColorData{
     NSString *txtFilePath2 = [[NSBundle mainBundle] pathForResource:@"Colors" ofType:@"csv"];
     __block NSArray *dicts;
     [CSVParser parseCSVIntoArrayOfDictionariesFromFile:txtFilePath2
-                                                         withSeparatedCharacterString:@","
-                                                                 quoteCharacterString:@"\""
+                          withSeparatedCharacterString:@","
+                                  quoteCharacterString:@"\""
                                              withBlock:^(NSArray *array, NSError *error){
                                                  if(error){
                                                      NSLog(@"%@",[error localizedDescription]);
@@ -143,7 +146,7 @@
                                                      _colorRating = [dicts mutableCopy];
                                                  }
                                              }];
-   
+    
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -166,9 +169,9 @@
     NSPredicate *shoeColorFilter = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"Shoes LIKE '%@'",_shoeColor]];
     NSArray *filtered = [[[[_colorRating filteredArrayUsingPredicate:suitColorFilter]
                            filteredArrayUsingPredicate:shirtColorFilter]
-                         filteredArrayUsingPredicate:tieColorFilter]
+                          filteredArrayUsingPredicate:tieColorFilter]
                          filteredArrayUsingPredicate:shoeColorFilter];
-
+    
     NSString *rating = [[filtered firstObject]objectForKey:@"Rating"];
     _comment1 = [[filtered firstObject]objectForKey:@"Comment"];
     
@@ -230,7 +233,7 @@
         }
         [sender setSelected:YES];
         [self.scrollView setZoomScale:1 animated:YES];
-
+        
         //images.center = _scrollView.center;
     }
     else{
@@ -241,16 +244,12 @@
 - (IBAction)suitButton:(id)sender {
     if(![sender isSelected]){
         [self hideAll];
-    [self.view addSubview:_suitView];
-    for(UIButton *button in _buttonArray){
-        [button setSelected:NO];
-    }
-    [sender setSelected:YES];
-        [self.scrollView setZoomScale:1 animated:NO];
-        
-        [self.scrollView setZoomScale:1.5 animated:YES];
-        //images.center = _scrollView.center;
-
+        [self.view addSubview:_suitView];
+        for(UIButton *button in _buttonArray){
+            [button setSelected:NO];
+        }
+        [sender setSelected:YES];
+        [self.scrollView setZoomScale:1 animated:YES];
     }
     else{
         [self.scrollView setZoomScale:1 animated:YES];
@@ -271,8 +270,7 @@
         [self.scrollView setBounces:NO];
         [self.scrollView setBouncesZoom:NO];
         [self.scrollView zoomToRect:[self centeredFrameForScrollView:_scrollView andUIView:_images] animated:YES];
-        [self.scrollView setZoomScale:1.5 animated:YES];
-
+        [self.scrollView zoomToRect:CGRectMake(48.150822,14.593456,121.225739,285.486603) animated:YES];
         
     }
     else{
@@ -281,41 +279,42 @@
         [_shirtView removeFromSuperview];
         [sender setSelected:NO];
     }
-
+    
 }
 - (IBAction)tieButton:(id)sender {
     if(![sender isSelected]){
         [self hideAll];
-    [self.view addSubview:_tieView];
-    for(UIButton *button in _buttonArray){
-        [button setSelected:NO];
+        [self.view addSubview:_tieView];
+        for(UIButton *button in _buttonArray){
+            [button setSelected:NO];
+        }
+        [sender setSelected:YES];
+        [self.scrollView zoomToRect:CGRectMake(52.411797,5.788736,67.022858,157.838821) animated:YES];
     }
-    [sender setSelected:YES];
-        [self.scrollView setZoomScale:1 animated:NO];
-        [self.scrollView setZoomScale:2 animated:YES];}
     
     else{
         [self.scrollView setZoomScale:1 animated:YES];
-            _tieView.type = @"fadeOutRight";
-            [_tieView removeFromSuperview];
-            [sender setSelected:NO];
-        }
+        _tieView.type = @"fadeOutRight";
+        [_tieView removeFromSuperview];
+        [sender setSelected:NO];
+    }
 }
 - (IBAction)shoesButton:(id)sender {
     if(![sender isSelected]){
         [self hideAll];
         [self.view addSubview:_shoeView];
         [self.scrollView setZoomScale:1 animated:YES];
-    for(UIButton *button in _buttonArray){
-        [button setSelected:NO];
-    }
-    [sender setSelected:YES];
-    }else{
-            [self.scrollView setZoomScale:1 animated:YES];
-            _shoeView.type = @"fadeOutRight";
-            [_shoeView removeFromSuperview];
-            [sender setSelected:NO];
+        for(UIButton *button in _buttonArray){
+            [button setSelected:NO];
         }
+        [sender setSelected:YES];
+        [self.scrollView zoomToRect:CGRectMake(29.646683,258.785675,90.090744,212.163712) animated:YES];
+    }else{
+        [self.scrollView setZoomScale:1 animated:YES];
+        _shoeView.type = @"fadeOutRight";
+        [_shoeView removeFromSuperview];
+        [sender setSelected:NO];
+    }
 }
 -(void)initViews{
     _openView = [[[NSBundle mainBundle] loadNibNamed:@"OpenView" owner:self options:nil] firstObject];

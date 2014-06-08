@@ -36,11 +36,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"hereer");
-    _text = [[UITextView alloc]init];
-    [_text setFont:[UIFont fontWithName:@"Bariol-Regular" size:4]];
-    [_text setText:@"Do your pants touch the ground when you aren’t wearing shoes? If so, you need to get your pants hemmed."];
-    _image = [[UIImageView alloc]initWithImage:_image_holder];
+    int rand = arc4random() %3 + 1;
+    NSLog(@"%x",rand);
+    if(rand == 1){
+        [self tip1];
+    }
+    else if(rand == 2){
+        [self tip2];
+    }
+    else if(rand == 3){
+        [self tip3];
+    }
+    [self.view layoutSubviews];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,5 +60,33 @@
 - (IBAction)rate:(id)sender {
     NSLog(@"Hereerere");
     [_controller dismissTip];
+}
+
+-(void)tip1{
+    [self.text setFont:[UIFont fontWithName:@"Bariol-Regular" size:4]];
+    [self.text setText:@"Do your pants touch the ground when you aren’t wearing shoes? If so, you need to get your pants hemmed."];
+    [self.image setImage:[UIImage imageNamed:@"tip1"]];
+}
+-(void)tip2{
+    [self.text setFont:[UIFont fontWithName:@"Bariol-Regular" size:4]];
+    [self.text setText:@"When standing with your arms at your sides, 1/4 - 1/2 inches of your shirt's sleeve should show under your suit."];
+    [self.image setImage:[UIImage imageNamed:@"tip2"]];
+}
+-(void)tip3{
+    [self.text setFont:[UIFont fontWithName:@"Bariol-Regular" size:4]];
+    [self.text setText:@"If you are unsure about what socks to wear with a suit, you cannot go wrong with matching them to your suit, shoes or both. Don't worry if they do not perfectly match, they are made of different materials."];
+    [self.image setImage:[UIImage imageNamed:@"tip3"]];
+}
+-(UITextView *)text{
+    if(!_text){
+        _text = [[UITextView alloc]init];
+    }
+    return _text;
+}
+-(UIImageView *)image{
+    if(!_image){
+        _image = [[UIImageView alloc]init];
+    }
+    return _image;
 }
 @end
